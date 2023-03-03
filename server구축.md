@@ -10,7 +10,7 @@
 docker run  --name crypto_mongo -d -p 45000:27017 -it -v /Users/pn_jh/Desktop/fastapiserver:/desktop mongo
 ````
 
-#### Flask DB
+#### Flask 서버
 
 STEP 1
 
