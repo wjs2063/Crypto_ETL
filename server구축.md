@@ -57,4 +57,7 @@ STEP 4
 source .bashrc
 ````
 
-
+STEP 5
+````
+pythom -m pip install requirements.txt
+````
