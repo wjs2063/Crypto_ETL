@@ -1,5 +1,5 @@
 import requests
-from datetime import datetime,timedelta
+from datetime import datetime
 import pandas as pd
 #from database import get_db
 import time
@@ -52,25 +52,20 @@ def binance():
         print(e)
     return []
 
+binance_url = "https://fapi.binance.com/fapi/v1/historicalTrades"
+params = {
+    "symbol":"BTCUSDT",
+    "limit" : 1000,
 
+}
+response = requests.get(binance_url,params = params).json()
+print(response)
 
-
-from pymongo import MongoClient
-MONGO_DETAILS = "mongodb://172.30.1.56:45000/test"
-from database import get_db
-
-#db = MongoClient(MONGO_DETAILS)
-#x = binance()
-#db.local.data.insert_one(x[0])
-import asyncio
-async def Insert_to_Db():
-    async with get_db() as db:
-        x = binance()
-        print(x)
-        db.data.insert_one(x[0])
+"""
 while True:
     asyncio.run(Insert_to_Db())
     time.sleep(1)
+"""
 """
 
 while True:

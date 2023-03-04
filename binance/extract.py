@@ -1,11 +1,10 @@
 #-*- coding:utf-8 -*-
 import requests
-from datetime import datetime,timedelta
+from datetime import datetime
 import pandas as pd
-from database import get_db
+from Crypto_ETL.config.database import get_db
 import time
 import asyncio
-from typing import List
 
 # qty : 매수/매도량 (주문량)
 # quoteQty :주문 암호화폐 금액
@@ -55,8 +54,7 @@ async def insert_to_Db(data):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
-            print(x)
-            db.data.insert_one(x)
+            db.binance.insert_one(x)
 
 last_id = 0
 
