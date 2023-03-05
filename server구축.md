@@ -10,6 +10,11 @@
 docker run  --name crypto_mongo -d -p 45000:27017 -it -v /Users/pn_jh/Desktop/fastapiserver:/desktop mongo
 ````
 
+
+
+
+
+
 #### Flask 서버
 
 STEP 1
@@ -61,3 +66,11 @@ STEP 5
 ````
 pythom -m pip install requirements.txt
 ````
+
+
+#### Docker container Image 
+```
+docker run  --name binance -d -p 7777:7777 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
+docker run  --name bybit -d -p 8888:8888 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
+docker run  --name bitmex -d -p 9999:9999 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
+```
