@@ -61,7 +61,7 @@ last_id = 0
 # 해당 dataFrame 을 분단위로 집계한다
 
 def transform(data : pd.DataFrame):
-    data = data.astype({"id":int,"price":float,"qty":float,"quoteQty":float})
+    data = data.astype({"id":int,"price":float,"qty":float,"isBuyerMaker":"boolean","quoteQty":float})
     data["time"] = data.apply(lambda x: convert_unix_to_date(x["time"]),axis = 1)
     data["binance_taker_buy_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] == False else 0,axis = 1)
     data["binance_taker_sell_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] else 0,axis = 1)
@@ -82,21 +82,23 @@ df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerM
 # 시간 동일하게 맞춘후
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 while True:
+    now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
     data,last_id = binance(last_id)
     # 계속 데이터를 추가하고
     if data :
         data = transform(pd.DataFrame(data))
-        df = pd.concat([df,pd.DataFrame(data)],axis = 0,ignore_index = True)
+        df = pd.concat([df,data],ignore_index = True)
     # 분 단위가 달라지는 순간
-    now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
     if start_date != now:
         # 데이터를 분리한다 .
-        index = df.index[(df["time"] < now)][-1] + 1
-        data,df = df.iloc[:index,:],df.iloc[index :,:]
-        # 달라진 시점 기록하고
+        if len(df):
+            index = df.index[(df["time"] < now)][-1] + 1
+            data,df = df.iloc[:index,:],df.iloc[index :,:]
+            # 달라진 시점 기록하고
+            db_data = aggregate(data)
+            print(db_data)
+            asyncio.run(insert_to_Db(db_data))
         start_date = now
-        db_data = aggregate(data)
-        asyncio.run(insert_to_Db(db_data))
     # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
     time.sleep(10)
 

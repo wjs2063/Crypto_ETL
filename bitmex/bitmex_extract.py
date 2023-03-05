@@ -89,12 +89,13 @@ while True:
         #df = df.drop_duplicates()
         #print(len(df))
         #df = df.reset_index(drop = True)
-        index = df.index[(df["timestamp"] < now)][-1] + 1
-        # data 분리
-        data,df = df.iloc[:index,:],df.iloc[index :,:]
-        data = aggregate(data)
-        print(data)
-        asyncio.run(insert_to_Db(data))
+        if len(df) :
+            index = df.index[(df["timestamp"] < now)][-1] + 1
+            # data 분리
+            data,df = df.iloc[:index,:],df.iloc[index:,:]
+            data = aggregate(data)
+            print(data)
+            asyncio.run(insert_to_Db(data))
         # data 만 처리
         start_date = now
     time.sleep(10)
