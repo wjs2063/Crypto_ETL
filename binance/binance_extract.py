@@ -82,24 +82,27 @@ df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerM
 # 시간 동일하게 맞춘후
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 while True:
-    now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-    data,last_id = binance(last_id)
-    # 계속 데이터를 추가하고
-    if data :
-        data = transform(pd.DataFrame(data))
-        df = pd.concat([df,data],ignore_index = True)
-    # 분 단위가 달라지는 순간
-    if start_date != now:
-        # 데이터를 분리한다 .
-        if len(df):
-            index = df.index[(df["time"] < now)][-1] + 1
-            data,df = df.iloc[:index,:],df.iloc[index :,:]
-            # 달라진 시점 기록하고
-            db_data = aggregate(data)
-            print(db_data)
-            asyncio.run(insert_to_Db(db_data))
-        start_date = now
-    # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
-    time.sleep(10)
+    try :
+        now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+        data,last_id = binance(last_id)
+        # 계속 데이터를 추가하고
+        if data :
+            data = transform(pd.DataFrame(data))
+            df = pd.concat([df,data],ignore_index = True)
+        # 분 단위가 달라지는 순간
+        if start_date != now:
+            # 데이터를 분리한다 .
+            if len(df) > 0:
+                index = df[(df["time"] < now)].index[-1] + 1
+                data,df = df.iloc[:index,:],df.iloc[index :,:]
+                # 달라진 시점 기록하고
+                db_data = aggregate(data)
+                print(db_data)
+                asyncio.run(insert_to_Db(db_data))
+            start_date = now
+        # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
+        time.sleep(10)
+    except Exception as e :
+        print(e)
 
 

@@ -56,27 +56,30 @@ df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 print(start_date)
 while True:
-    now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-    data = bybit()
-    if data:
-        data = pd.DataFrame(data)
-        data = transform(data)
-        data = data[data["time"] >= start_date]
-        df = pd.concat([df,data],ignore_index = True)
-        df = df.reset_index(drop = True)
-    #데이터 이어붙히고
-    if start_date != now:
-        if len(df) :
-            df = df.drop_duplicates()
+    try :
+        now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+        data = bybit()
+        if data:
+            data = pd.DataFrame(data)
+            data = transform(data)
+            data = data[data["time"] >= start_date]
+            df = pd.concat([df,data],ignore_index = True)
             df = df.reset_index(drop = True)
-            index = df.index[(df["time"] < now)][-1] + 1
-            # data 분리
-            data,df = df.iloc[:index,:],df.iloc[index :,:]
-            data = aggregate(data)
-            print(data)
-            asyncio.run(insert_to_Db(data))
-        # data 만 처리
-        start_date = now
-    time.sleep(10)
+        #데이터 이어붙히고
+        if start_date != now:
+            if len(df) > 0 :
+                df = df.drop_duplicates()
+                df = df.reset_index(drop = True)
+                index = df[(df["time"] < now)].index[-1] + 1
+                # data 분리
+                data,df = df.iloc[:index,:],df.iloc[index :,:]
+                data = aggregate(data)
+                print(data)
+                asyncio.run(insert_to_Db(data))
+            # data 만 처리
+            start_date = now
+        time.sleep(10)
+    except Exception as e :
+        print(e)
 
 

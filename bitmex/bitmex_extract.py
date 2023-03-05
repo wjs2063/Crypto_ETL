@@ -75,28 +75,31 @@ last = datetime.utcnow()
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
 while True:
-    now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-    data,last = bitmex(now,last)
-    if data:
-        data = pd.DataFrame(data)
-        data = transform(data)
-        data = data[data["timestamp"] >= start_date]
-        df = pd.concat([df,data],ignore_index = True)
-        df = df.reset_index(drop = True)
-    #데이터 이어붙히고
-    if start_date != now:
-        #print(len(df))
-        #df = df.drop_duplicates()
-        #print(len(df))
-        #df = df.reset_index(drop = True)
-        if len(df) :
-            index = df.index[(df["timestamp"] < now)][-1] + 1
-            # data 분리
-            data,df = df.iloc[:index,:],df.iloc[index:,:]
-            data = aggregate(data)
-            print(data)
-            asyncio.run(insert_to_Db(data))
-        # data 만 처리
-        start_date = now
-    time.sleep(10)
+    try :
+        now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+        data,last = bitmex(now,last)
+        if data:
+            data = pd.DataFrame(data)
+            data = transform(data)
+            data = data[data["timestamp"] >= start_date]
+            df = pd.concat([df,data],ignore_index = True)
+            df = df.reset_index(drop = True)
+        #데이터 이어붙히고
+        if start_date != now:
+            #print(len(df))
+            #df = df.drop_duplicates()
+            #print(len(df))
+            #df = df.reset_index(drop = True)
+            if len(df) > 0 :
+                index = df[(df["timestamp"] < now)].index[-1] + 1
+                # data 분리
+                data,df = df.iloc[:index,:],df.iloc[index:,:]
+                data = aggregate(data)
+                print(data)
+                asyncio.run(insert_to_Db(data))
+            # data 만 처리
+            start_date = now
+        time.sleep(10)
+    except Exception as e:
+        print(e)
 
