@@ -2,7 +2,7 @@
 import requests
 from datetime import datetime
 import pandas as pd
-from Crypto_ETL.config.database import get_db
+from database import get_db
 import time
 import asyncio
 
@@ -86,7 +86,7 @@ while True:
     # 계속 데이터를 추가하고
     if data :
         data = transform(pd.DataFrame(data))
-        df = pd.concat([df,pd.DataFrame(data)],ignore_index = True)
+        df = pd.concat([df,pd.DataFrame(data)],axis = 0,ignore_index = True)
     # 분 단위가 달라지는 순간
     now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
     if start_date != now:
