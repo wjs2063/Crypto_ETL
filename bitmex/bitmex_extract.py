@@ -16,6 +16,8 @@ price : 가격
 https://www.bitmex.com/api/explorer/#!/Trade/Trade_get
 """
 
+# {'error': {'message': 'Rate limit exceeded, retry in 10 minutes.', 'name': 'RateLimitError'}}
+
 def convert_unix_to_date(time):
     # 년 월 일 시 분 까지만 가져온다 (분단위)
     time /= 1000
@@ -36,7 +38,9 @@ def bitmex(now,last):
 
     response = requests.get(bitmex_url ,params = param).json()
     # 시간순 정렬
+    print(response)
     response.sort(key = lambda x: x["timestamp"])
+    # API limited Error exception
     temp = []
     for r in response:
         x = datetime.strptime(r["timestamp"], '%Y-%m-%dT%H:%M:%S.%fZ')
@@ -44,10 +48,6 @@ def bitmex(now,last):
         last = x
         temp.append(r)
     return temp,last
-
-
-    #시간변환
-    return response
 
 def transform(df):
     df = df.astype({"trdMatchID":str,"price":float,"size":float,})

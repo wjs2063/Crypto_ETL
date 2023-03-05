@@ -2,7 +2,8 @@ from typing import List,Optional
 from pydantic import BaseModel,Field,Required,validator
 from enum import Enum
 from datetime import datetime
-
+from flask_wtf import FlaskForm
+from wtforms import SelectField
 
 class StockEnum(Enum):
     binance = "binance"
@@ -10,6 +11,8 @@ class StockEnum(Enum):
     bitmex = "bitmex"
     all_exchange = "all_exchange"
 
+class form(FlaskForm):
+    stockMarket = SelectField("stockMarket",choices = [("binance","binance_exc"),("bybit","bybit_exc"),("bitmex","bitmex_exc"),("all_exchange","all")])
 
 class RequestFormDataModel(BaseModel):
     stockMarket: StockEnum

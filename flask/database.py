@@ -15,6 +15,3 @@ async def get_db():
     finally:
         db.close()
 
-
-db = MongoClient(MONGO_DETAILS)
-print(db.local.data.find({"time":"2023-03-03 14:05"}))
