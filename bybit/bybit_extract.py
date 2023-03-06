@@ -68,10 +68,11 @@ while True:
         #데이터 이어붙히고
         if start_date != now:
             start_date = now
+            df = df.drop_duplicates()
+            df = df.sort_values(by = "time").reset_index(drop = True)
             temp = df[(df["time"] < now)]
             if len(temp) > 0 :
-                df = df.drop_duplicates()
-                df = df.reset_index(drop = True)
+                #df = df.reset_index(drop = True)
                 index = temp.index[-1] + 1
                 # data 분리
                 data,df = df.iloc[:index,:],df.iloc[index :,:]

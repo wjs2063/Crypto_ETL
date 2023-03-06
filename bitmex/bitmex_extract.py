@@ -87,6 +87,8 @@ while True:
                 #df = df.drop_duplicates()
                 #print(len(df))
                 #df = df.reset_index(drop = True)
+            df = df.drop_duplicates()
+            df = df.sort_values(by = "timestamp").reset_index(drop = True)
             temp = df[(df["timestamp"] < now)]
             if len(temp) > 0 :
                 index = temp.index[-1] + 1

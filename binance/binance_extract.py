@@ -93,6 +93,8 @@ while True:
         if start_date != now:
             start_date = now
             # 데이터를 분리한다 .
+            df = df.drop_duplicates()
+            df = df.sort_values(by = "time").reset_index(drop = True)
             temp = df[(df["time"] < now)]
             if len(temp) > 0:
                 index = temp.index[-1] + 1
