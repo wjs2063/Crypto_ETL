@@ -6,6 +6,8 @@ from database import get_db
 import time
 import asyncio
 from typing import List,Optional
+import logging
+logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
 # qty : 매수/매도량 (주문량)
 # quoteQty :주문 암호화폐 금액
 # volume : 거래량
@@ -81,6 +83,7 @@ df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerM
 
 # 시간 동일하게 맞춘후
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+logging.info(f" binance system is started at {start_date}")
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
@@ -91,6 +94,7 @@ while True:
             df = pd.concat([df,data],ignore_index = True)
         # 분 단위가 달라지는 순간
         if start_date != now:
+            logging.info(f"{start_date}  -  {now} : preprocessing started")
             start_date = now
             # 데이터를 분리한다 .
             df = df.drop_duplicates()
@@ -103,6 +107,7 @@ while True:
                 db_data = aggregate(data)
                 print(db_data)
                 asyncio.run(insert_to_Db(db_data))
+                logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
         time.sleep(10)
     except KeyError as k :

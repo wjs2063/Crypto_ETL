@@ -4,6 +4,9 @@ import pandas as pd
 import time
 from database import get_db
 import asyncio
+import logging
+logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
+
 """
 time stamp : utc iso format
 side : Buy,Sell
@@ -39,7 +42,7 @@ def get_bitmex_data(startTime,endTime):
     }
     response = requests.get(bitmex_url ,params = param).json()
     # 시간순 정렬
-    response.sort(key = lambda x: x["timestamp"])
+    #response.sort(key = lambda x: x["timestamp"])
     # API limited Error exception
     temp = []
     return response
@@ -69,12 +72,15 @@ async def insert_to_Db(data):
 last = datetime.utcnow()
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
-print(start_date)
+logging.info(f" bitmex system is started at {start_date}")
+
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
         if start_date != now:
-            print(start_date,now)
+
+            logging.info(f"{start_date}  -  {now} : preprocessing started")
+
             data = get_bitmex_data(start_date,now)
             if data:
                 data = pd.DataFrame(data)
@@ -98,13 +104,14 @@ while True:
                 data = aggregate(data)
                 print(data)
                 asyncio.run(insert_to_Db(data))
+                logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
                 # data 만 처리
             start_date = now
         time.sleep(5)
     except KeyError as k:
-        print(k)
+        logging.error(f"Key Error:{k}")
         time.sleep(60 * 10)
     except Exception as e:
-        print(e)
+        logging.error(f"Exception Error: {k}")
         time.sleep(60)
 

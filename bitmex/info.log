@@ -1,0 +1,23 @@
+INFO:root: system is started at 2023-03-06 11:15
+INFO:root:2023-03-06 11:15  -  2023-03-06 11:16 : preprocessing started
+INFO:root:2023-03-06 11:16  -  2023-03-06 11:17 : preprocessing started
+INFO:root:2023-03-06 11:17  -  2023-03-06 11:18 : preprocessing started
+INFO:root:2023-03-06 11:18  -  2023-03-06 11:19 : preprocessing started
+INFO:root:2023-03-06 11:19  -  2023-03-06 11:20 : preprocessing started
+INFO:root:2023-03-06 11:20  -  2023-03-06 11:21 : preprocessing started
+INFO:root:2023-03-06 11:21  -  2023-03-06 11:22 : preprocessing started
+INFO:root:2023-03-06 11:22  -  2023-03-06 11:23 : preprocessing started
+INFO:root: bitmex system is started at 2023-03-06 11:23
+INFO:root:2023-03-06 11:23  -  2023-03-06 11:24 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A23&endTime%3A=2023-03-06+11%3A24 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:23  -  2023-03-06 11:24 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:24  -  2023-03-06 11:25 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A24&endTime%3A=2023-03-06+11%3A25 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:24  -  2023-03-06 11:25 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:25  -  2023-03-06 11:26 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A25&endTime%3A=2023-03-06+11%3A26 HTTP/1.1" 200 2
