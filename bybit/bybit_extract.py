@@ -16,7 +16,7 @@ def convert_iso_form(time):
 
 
 
-def bybit():
+def get_bybit_data():
     bybit_url = "https://api-testnet.bybit.com/v2/public/trading-records"
     param = {
         "symbol" : "BTCUSD",
@@ -58,7 +58,7 @@ print(start_date)
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-        data = bybit()
+        data = get_bybit_data()
         if data:
             data = pd.DataFrame(data)
             data = transform(data)
@@ -67,18 +67,22 @@ while True:
             df = df.reset_index(drop = True)
         #데이터 이어붙히고
         if start_date != now:
-            if len(df) > 0 :
+            start_date = now
+            temp = df[(df["time"] < now)]
+            if len(temp) > 0 :
                 df = df.drop_duplicates()
                 df = df.reset_index(drop = True)
-                index = df[(df["time"] < now)].index[-1] + 1
+                index = temp.index[-1] + 1
                 # data 분리
                 data,df = df.iloc[:index,:],df.iloc[index :,:]
                 data = aggregate(data)
                 print(data)
                 asyncio.run(insert_to_Db(data))
             # data 만 처리
-            start_date = now
         time.sleep(10)
+    except KeyError as k :
+        print(k)
+        time.slee(60 * 10)
     except Exception as e :
         print(e)
 

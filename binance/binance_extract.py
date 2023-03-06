@@ -5,7 +5,7 @@ import pandas as pd
 from database import get_db
 import time
 import asyncio
-
+from typing import List,Optional
 # qty : 매수/매도량 (주문량)
 # quoteQty :주문 암호화폐 금액
 # volume : 거래량
@@ -30,7 +30,7 @@ def convert_unix_to_date(time):
     # 년 월 일 시 분 까지만 가져온다 (분단위)
     return datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M')
 
-def binance(last_id: int):
+def get_binance_data(last_id: int) -> List[dict]:
     try :
         binance_url = "https://fapi.binance.com/fapi/v1/trades"
         data = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
@@ -84,24 +84,28 @@ start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-        data,last_id = binance(last_id)
+        data,last_id = get_binance_data(last_id)
         # 계속 데이터를 추가하고
         if data :
             data = transform(pd.DataFrame(data))
             df = pd.concat([df,data],ignore_index = True)
         # 분 단위가 달라지는 순간
         if start_date != now:
+            start_date = now
             # 데이터를 분리한다 .
-            if len(df) > 0:
-                index = df[(df["time"] < now)].index[-1] + 1
+            temp = df[(df["time"] < now)]
+            if len(temp) > 0:
+                index = temp.index[-1] + 1
                 data,df = df.iloc[:index,:],df.iloc[index :,:]
                 # 달라진 시점 기록하고
                 db_data = aggregate(data)
                 print(db_data)
                 asyncio.run(insert_to_Db(db_data))
-            start_date = now
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
         time.sleep(10)
+    except KeyError as k :
+        print(k)
+        time.sleep(60 * 10)
     except Exception as e :
         print(e)
 

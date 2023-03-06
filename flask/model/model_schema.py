@@ -11,8 +11,12 @@ class StockEnum(Enum):
     bitmex = "bitmex"
     all_exchange = "all_exchange"
 
-class form(FlaskForm):
-    stockMarket = SelectField("stockMarket",choices = [("binance","binance_exc"),("bybit","bybit_exc"),("bitmex","bitmex_exc"),("all_exchange","all")])
+class Request_Form(BaseModel):
+    stockMarket : str
+
+class ResponseModel(BaseModel):
+    stockMarket : str
+
 
 class RequestFormDataModel(BaseModel):
     stockMarket: StockEnum
