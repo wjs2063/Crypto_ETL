@@ -40,13 +40,13 @@ def sumOfvolumes(exchange_name,data):
 def get_exchange_data(exchange_name,startTime,endTime):
     with sync_db() as db:
         if exchange_name == "binance":
-            data = list(db.binance.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).limit(100))
+            data = list(db.binance.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).sort("time",-1).limit(100))
             return data
         elif exchange_name == "bybit":
-            data = list(db.bybit.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).limit(100))
+            data = list(db.bybit.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).sort("time",-1).limit(100))
             return data
         elif exchange_name == "bitmex":
-            data = list(db.bitmex.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).limit(100))
+            data = list(db.bitmex.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,f"{exchange_name}_taker_sell_vol":1,f"{exchange_name}_taker_buy_vol":1,"_id":0}).sort("time",-1).limit(100))
             return data
         else:
             return []

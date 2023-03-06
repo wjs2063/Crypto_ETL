@@ -1,0 +1,110 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://172.17.0.2:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 978-793-395
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:27] "GET /swagger.json HTTP/1.1" 200 -
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:20:43] "[35m[1mGET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A18 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/desktop/Crypto_ETL/flask/config/database.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 495-621-213
+INFO:werkzeug: * Detected change in '/desktop/Crypto_ETL/flask/config/database.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 140-136-268
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://172.17.0.2:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 115-291-750
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:04] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:12] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A18 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:35] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A50 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:38] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A50 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:24:49] "GET /gg/binance/2023-03-06%2010%3A00/2023-03-06%2011%3A00 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:05] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:11] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A10 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:17] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A10 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://172.17.0.2:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 408-055-373
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:25:52] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://172.17.0.2:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 255-486-571
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:10] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:13] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:26:19] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A13 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:28:14] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2012%3A13 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:28:28] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -

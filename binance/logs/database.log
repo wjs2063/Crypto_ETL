@@ -1,13 +1,117 @@
-INFO:root: binance system is started at 2023-03-06 11:53
-INFO:root:2023-03-06 11:53  -  2023-03-06 11:54 : preprocessing started
+INFO:root: binance system is started at 2023-03-06 12:00
+INFO:root:2023-03-06 12:00  -  2023-03-06 12:01 : preprocessing started
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
-INFO:root:2023-03-06 11:54  -  2023-03-06 11:54 : Loading into database completed successfully!!
-INFO:root:2023-03-06 11:54  -  2023-03-06 11:55 : preprocessing started
+INFO:root:2023-03-06 12:01  -  2023-03-06 12:01 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:01  -  2023-03-06 12:02 : preprocessing started
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
-INFO:root:2023-03-06 11:55  -  2023-03-06 11:55 : Loading into database completed successfully!!
-INFO:root:2023-03-06 11:55  -  2023-03-06 11:56 : preprocessing started
+INFO:root:2023-03-06 12:02  -  2023-03-06 12:02 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:02  -  2023-03-06 12:03 : preprocessing started
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
-INFO:root:2023-03-06 11:56  -  2023-03-06 11:56 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:03  -  2023-03-06 12:03 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:03  -  2023-03-06 12:04 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:04  -  2023-03-06 12:04 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:04  -  2023-03-06 12:05 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:05  -  2023-03-06 12:05 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:05  -  2023-03-06 12:06 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:06  -  2023-03-06 12:06 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:06  -  2023-03-06 12:07 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:07  -  2023-03-06 12:07 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:07  -  2023-03-06 12:08 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:08  -  2023-03-06 12:08 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:08  -  2023-03-06 12:09 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:09  -  2023-03-06 12:09 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:09  -  2023-03-06 12:10 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:10  -  2023-03-06 12:10 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:10  -  2023-03-06 12:11 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:11  -  2023-03-06 12:11 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:11  -  2023-03-06 12:12 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:12  -  2023-03-06 12:12 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:12  -  2023-03-06 12:13 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:13  -  2023-03-06 12:13 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:13  -  2023-03-06 12:14 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:14  -  2023-03-06 12:14 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:14  -  2023-03-06 12:15 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:15  -  2023-03-06 12:15 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:15  -  2023-03-06 12:16 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:16  -  2023-03-06 12:16 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:16  -  2023-03-06 12:17 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:17  -  2023-03-06 12:17 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:17  -  2023-03-06 12:18 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:18  -  2023-03-06 12:18 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:18  -  2023-03-06 12:19 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:19  -  2023-03-06 12:19 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:19  -  2023-03-06 12:20 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:20  -  2023-03-06 12:20 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:20  -  2023-03-06 12:21 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:21  -  2023-03-06 12:21 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:21  -  2023-03-06 12:22 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:22  -  2023-03-06 12:22 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:22  -  2023-03-06 12:23 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:23  -  2023-03-06 12:23 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:23  -  2023-03-06 12:24 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:24  -  2023-03-06 12:24 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:24  -  2023-03-06 12:25 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:25  -  2023-03-06 12:25 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:25  -  2023-03-06 12:26 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:26  -  2023-03-06 12:26 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:26  -  2023-03-06 12:27 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:27  -  2023-03-06 12:27 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:27  -  2023-03-06 12:28 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:28  -  2023-03-06 12:28 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:28  -  2023-03-06 12:29 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:29  -  2023-03-06 12:29 : Loading into database completed successfully!!
