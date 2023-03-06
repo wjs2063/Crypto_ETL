@@ -70,19 +70,21 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     :param data: pd.DataFrame
     :return: List[dict]
     """
+    # avoid slice warning error
+    data = data.copy()
     logging.info("aggregate function is started!!")
-    data.loc[:,"bitmex_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Buy" else 0,axis = 1)
-    data.loc[:,"bitmex_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Sell" else 0,axis = 1)
+    data["bitmex_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Buy" else 0,axis = 1)
+    data["bitmex_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Sell" else 0,axis = 1)
     data = data.groupby("time").agg({"bitmex_taker_buy_vol":sum,"bitmex_taker_sell_vol":sum}).reset_index()
-    logging.info("get_bitmex_data function is finished!!")
+    logging.info("aggrgate function is finished!!")
     return data.to_dict(orient = "records")
 
 
 def concatenation(df:pd.DataFrame,data:pd.DataFrame):
     """
     concatenation function : 두개의 data 를 이어붙힌다.
-    :param df:
-    :param data:
+    :param df: pd.DataFrame
+    :param data: pd.DataFrame
     :return:
     """
     logging.info("concatenation function is started!!")
@@ -107,7 +109,7 @@ def seperate_data(df:pd.DataFrame) -> List[tuple]:
         index = temp.index[-1] + 1
         # data 분리
         data,df = df.iloc[:index,:],df.iloc[index:,:]
-        data.rename(columns = {"timestamp":"time"},inplace = True)
+        data = data.rename(columns = {"timestamp":"time"})
         data = aggregate(data)
         # data 만 처리
     else:
