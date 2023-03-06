@@ -78,9 +78,7 @@ while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
         if start_date != now:
-
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-
             data = get_bitmex_data(start_date,now)
             if data:
                 data = pd.DataFrame(data)
@@ -102,16 +100,23 @@ while True:
                 data,df = df.iloc[:index,:],df.iloc[index:,:]
                 data.rename(columns = {"timestamp":"time"},inplace = True)
                 data = aggregate(data)
-                print(data)
-                asyncio.run(insert_to_Db(data))
-                logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
+
                 # data 만 처리
+            else:
+                data = [{"time":start_date,
+                        "bitmex_taker_buy_vol":0,
+                        "bitmex_taker_sell_vol":0
+                        }]
+                df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
+            print(data)
+            asyncio.run(insert_to_Db(data))
+            logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
         time.sleep(5)
     except KeyError as k:
         logging.error(f"Key Error:{k}")
         time.sleep(60 * 10)
     except Exception as e:
-        logging.error(f"Exception Error: {k}")
+        logging.error(f"Exception Error: {e}")
         time.sleep(60)
 

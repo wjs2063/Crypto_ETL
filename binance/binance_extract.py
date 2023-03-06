@@ -95,7 +95,6 @@ while True:
         # 분 단위가 달라지는 순간
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            start_date = now
             # 데이터를 분리한다 .
             df = df.drop_duplicates()
             df = df.sort_values(by = "time").reset_index(drop = True)
@@ -104,16 +103,25 @@ while True:
                 index = temp.index[-1] + 1
                 data,df = df.iloc[:index,:],df.iloc[index :,:]
                 # 달라진 시점 기록하고
-                db_data = aggregate(data)
-                print(db_data)
-                asyncio.run(insert_to_Db(db_data))
-                logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
+                data = aggregate(data)
+            else:
+                data = [{"time":start_date,
+                        "binance_taker_buy_vol":0,
+                        "binance_taker_sell_vol":0
+                        }]
+                #초기화
+                df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
+            print(data)
+            asyncio.run(insert_to_Db(data))
+            logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
+            start_date = now
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
         time.sleep(10)
-    except KeyError as k :
-        print(k)
+    except KeyError as k:
+        logging.error(f"Key Error:{k}")
         time.sleep(60 * 10)
-    except Exception as e :
-        print(e)
+    except Exception as e:
+        logging.error(f"Exception Error: {e}")
+        time.sleep(60)
 
 

@@ -71,7 +71,6 @@ while True:
         #데이터 이어붙히고
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            start_date = now
             df = df.drop_duplicates()
             df = df.sort_values(by = "time").reset_index(drop = True)
             temp = df[(df["time"] < now)]
@@ -81,15 +80,22 @@ while True:
                 # data 분리
                 data,df = df.iloc[:index,:],df.iloc[index :,:]
                 data = aggregate(data)
-                print(data)
-                asyncio.run(insert_to_Db(data))
-                logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
+            else:
+                data = [{"time":start_date,
+                        "binance_taker_buy_vol":0,
+                        "binance_taker_sell_vol":0
+                        }]
+                df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
+            print(data)
+            asyncio.run(insert_to_Db(data))
+            logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
+            start_date = now
             # data 만 처리
         time.sleep(10)
-    except KeyError as k :
-        print(k)
-        time.slee(60 * 10)
-    except Exception as e :
-        print(e)
-
+    except KeyError as k:
+        logging.error(f"Key Error:{k}")
+        time.sleep(60 * 10)
+    except Exception as e:
+        logging.error(f"Exception Error: {e}")
+        time.sleep(60)
 

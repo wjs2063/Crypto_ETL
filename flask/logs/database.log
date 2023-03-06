@@ -108,3 +108,80 @@ INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:28:14] "GET /gg/binance/2023-03-06%
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:28:28] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:39:59] "GET /gg/binance/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:13] "GET /gg/bybit/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:22] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:27] "[33mGET /gg/bitmex1/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:30] "[33mGET /gg/3/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1[0m" 404 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:35] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:42] "GET /gg/all_exchange/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:40:51] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:43:54] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:43:58] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:00] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:00] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:01] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:01] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:03] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:03] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:04] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:04] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:06] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:06] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:08] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:09] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:09] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:09] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:09] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:10] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 12:44:10] "GET /gg/bitmex/2023-03-06%2012%3A10/2023-03-06%2015%3A00 HTTP/1.1" 200 -
