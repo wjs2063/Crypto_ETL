@@ -1,9 +1,0 @@
-INFO:root: binance system is started at 2023-03-06 11:51
-INFO:root:2023-03-06 11:51  -  2023-03-06 11:52 : preprocessing started
-INFO:root:Mongo database connected!! 
-INFO:root:Mongo database disconnected!! 
-INFO:root:2023-03-06 11:52  -  2023-03-06 11:52 : Loading into database completed successfully!!
-INFO:root:2023-03-06 11:52  -  2023-03-06 11:53 : preprocessing started
-INFO:root:Mongo database connected!! 
-INFO:root:Mongo database disconnected!! 
-INFO:root:2023-03-06 11:53  -  2023-03-06 11:53 : Loading into database completed successfully!!

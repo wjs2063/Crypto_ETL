@@ -115,3 +115,11 @@ INFO:root:2023-03-06 12:28  -  2023-03-06 12:29 : preprocessing started
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-06 12:29  -  2023-03-06 12:29 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:29  -  2023-03-06 12:30 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:30  -  2023-03-06 12:30 : Loading into database completed successfully!!
+INFO:root:2023-03-06 12:30  -  2023-03-06 12:31 : preprocessing started
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-06 12:31  -  2023-03-06 12:31 : Loading into database completed successfully!!
