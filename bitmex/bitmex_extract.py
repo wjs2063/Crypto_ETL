@@ -5,7 +5,7 @@ import time
 from database import get_db
 import asyncio
 import logging
-logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
+logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
 
 """
 time stamp : utc iso format

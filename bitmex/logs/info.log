@@ -1,0 +1,44 @@
+INFO:root: bitmex system is started at 2023-03-06 11:42
+INFO:root:2023-03-06 11:42  -  2023-03-06 11:43 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A42&endTime%3A=2023-03-06+11%3A43 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:42  -  2023-03-06 11:43 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:43  -  2023-03-06 11:44 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A43&endTime%3A=2023-03-06+11%3A44 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:43  -  2023-03-06 11:44 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:44  -  2023-03-06 11:45 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A44&endTime%3A=2023-03-06+11%3A45 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:44  -  2023-03-06 11:45 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:45  -  2023-03-06 11:46 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A45&endTime%3A=2023-03-06+11%3A46 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:45  -  2023-03-06 11:46 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:46  -  2023-03-06 11:47 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A46&endTime%3A=2023-03-06+11%3A47 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:46  -  2023-03-06 11:47 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:47  -  2023-03-06 11:48 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A47&endTime%3A=2023-03-06+11%3A48 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:47  -  2023-03-06 11:48 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:48  -  2023-03-06 11:49 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A48&endTime%3A=2023-03-06+11%3A49 HTTP/1.1" 200 2
+INFO:root:2023-03-06 11:49  -  2023-03-06 11:50 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A49&endTime%3A=2023-03-06+11%3A50 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:49  -  2023-03-06 11:50 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:50  -  2023-03-06 11:51 : preprocessing started
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.bitmex.com:443
+DEBUG:urllib3.connectionpool:https://www.bitmex.com:443 "GET /api/v1/trade?symbol=XBTUSD&count=1000&startTime=2023-03-06+11%3A50&endTime%3A=2023-03-06+11%3A51 HTTP/1.1" 200 None
+DEBUG:asyncio:Using selector: EpollSelector
+INFO:root:2023-03-06 11:50  -  2023-03-06 11:51 : Loading into database completed successfully!!

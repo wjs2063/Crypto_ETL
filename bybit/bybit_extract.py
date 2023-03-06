@@ -5,7 +5,7 @@ import time
 from database import get_db
 import asyncio
 import logging
-logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
+logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
 def convert_unix_to_date(time):
     # 년 월 일 시 분 까지만 가져온다 (분단위)
     time /= 1000
@@ -55,6 +55,8 @@ def aggregate(data:pd.DataFrame):
 
 df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+
+
 logging.info(f" bybit system is started at {start_date}")
 while True:
     try :

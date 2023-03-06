@@ -7,7 +7,7 @@ import time
 import asyncio
 from typing import List,Optional
 import logging
-logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
+logging.basicConfig(filename = './logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
 # qty : 매수/매도량 (주문량)
 # quoteQty :주문 암호화폐 금액
 # volume : 거래량

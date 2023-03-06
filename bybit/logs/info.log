@@ -1,15 +1,11 @@
-INFO:root: bybit system is started at 2023-03-06 11:23
+INFO:root: bybit system is started at 2023-03-06 11:41
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:23  -  2023-03-06 11:24 : preprocessing started
+INFO:root:2023-03-06 11:41  -  2023-03-06 11:42 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:24  -  2023-03-06 11:24 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:42  -  2023-03-06 11:42 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -22,9 +18,14 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:24  -  2023-03-06 11:25 : preprocessing started
+INFO:root:2023-03-06 11:42  -  2023-03-06 11:43 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:25  -  2023-03-06 11:25 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:43  -  2023-03-06 11:43 : Loading into database completed successfully!!
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
+DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
+DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
+INFO:root: bybit system is started at 2023-03-06 11:43
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -33,11 +34,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:25  -  2023-03-06 11:26 : preprocessing started
+INFO:root:2023-03-06 11:43  -  2023-03-06 11:44 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:26  -  2023-03-06 11:26 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:44  -  2023-03-06 11:44 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -48,11 +47,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:26  -  2023-03-06 11:27 : preprocessing started
+INFO:root:2023-03-06 11:44  -  2023-03-06 11:45 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:27  -  2023-03-06 11:27 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:45  -  2023-03-06 11:45 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -65,9 +62,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:27  -  2023-03-06 11:28 : preprocessing started
+INFO:root:2023-03-06 11:45  -  2023-03-06 11:46 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:28  -  2023-03-06 11:28 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:46  -  2023-03-06 11:46 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -78,9 +75,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:28  -  2023-03-06 11:29 : preprocessing started
+INFO:root:2023-03-06 11:46  -  2023-03-06 11:47 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:29  -  2023-03-06 11:29 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:47  -  2023-03-06 11:47 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -93,9 +90,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:29  -  2023-03-06 11:30 : preprocessing started
+INFO:root:2023-03-06 11:47  -  2023-03-06 11:48 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:30  -  2023-03-06 11:30 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:48  -  2023-03-06 11:48 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -106,9 +103,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:30  -  2023-03-06 11:31 : preprocessing started
+INFO:root:2023-03-06 11:48  -  2023-03-06 11:49 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:31  -  2023-03-06 11:31 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:49  -  2023-03-06 11:49 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -121,9 +118,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:31  -  2023-03-06 11:32 : preprocessing started
+INFO:root:2023-03-06 11:49  -  2023-03-06 11:50 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:32  -  2023-03-06 11:32 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:50  -  2023-03-06 11:50 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
@@ -134,68 +131,9 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybi
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:32  -  2023-03-06 11:33 : preprocessing started
+INFO:root:2023-03-06 11:50  -  2023-03-06 11:51 : preprocessing started
 DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:33  -  2023-03-06 11:33 : Loading into database completed successfully!!
+INFO:root:2023-03-06 11:51  -  2023-03-06 11:51 : Loading into database completed successfully!!
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
 DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:33  -  2023-03-06 11:34 : preprocessing started
-DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:34  -  2023-03-06 11:34 : Loading into database completed successfully!!
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:34  -  2023-03-06 11:35 : preprocessing started
-DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:35  -  2023-03-06 11:35 : Loading into database completed successfully!!
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:35  -  2023-03-06 11:36 : preprocessing started
-DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:36  -  2023-03-06 11:36 : Loading into database completed successfully!!
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-INFO:root:2023-03-06 11:36  -  2023-03-06 11:37 : preprocessing started
-DEBUG:asyncio:Using selector: EpollSelector
-INFO:root:2023-03-06 11:37  -  2023-03-06 11:37 : Loading into database completed successfully!!
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-testnet.bybit.com:443
-DEBUG:urllib3.connectionpool:https://api-testnet.bybit.com:443 "GET /v2/public/trading-records?symbol=BTCUSD&limit=1000 HTTP/1.1" 200 None

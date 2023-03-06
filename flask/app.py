@@ -5,6 +5,8 @@ from config.database import sync_db,get_exchange_data
 from flask_restx import Api, Resource
 from datetime import datetime
 from bson import json_util
+import logging
+logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
 app = Flask(__name__)
 
 api = Api(app)
