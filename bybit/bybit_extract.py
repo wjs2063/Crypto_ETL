@@ -5,6 +5,7 @@ import time
 from database import get_db
 import asyncio
 import logging
+from typing import List,Optional
 logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
 def convert_unix_to_date(time):
     # 년 월 일 시 분 까지만 가져온다 (분단위)
@@ -17,7 +18,7 @@ def convert_iso_form(time):
 
 
 
-def get_bybit_data():
+def get_bybit_data() -> List[Optional[dict]]:
     bybit_url = "https://api-testnet.bybit.com/v2/public/trading-records"
     param = {
         "symbol" : "BTCUSD",
@@ -31,13 +32,13 @@ def get_bybit_data():
     #시간변환
     return response
 
-def transform(df):
+def transform(df : pd.DataFrame) -> pd.DataFrame:
     data = df.astype({"id":int,"price":float,"qty":float,})
     df["time"] = df["time"].apply(lambda x: convert_iso_form(x))
     df["time"] = df["time"].apply(lambda x: convert_unix_to_date(x))
     return df
 
-async def insert_to_Db(data):
+async def insert_to_Db(data : List[Optional[dict]]):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
@@ -46,7 +47,7 @@ async def insert_to_Db(data):
 
 
 
-def aggregate(data:pd.DataFrame):
+def aggregate(data:pd.DataFrame) -> List[dict]:
     data["bybit_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["qty"] if x["side"] == "Buy" else 0,axis = 1)
     data["bybit_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["qty"] if x["side"] == "Sell" else 0,axis = 1)
     data = data.groupby("time").agg({"bybit_taker_buy_vol":sum,"bybit_taker_sell_vol":sum}).reset_index()
@@ -82,11 +83,12 @@ while True:
                 data = aggregate(data)
             else:
                 data = [{"time":start_date,
-                        "binance_taker_buy_vol":0,
-                        "binance_taker_sell_vol":0
+                        "bybit_taker_buy_vol":0,
+                        "bybit_taker_sell_vol":0
                         }]
-                df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
+                #df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
             print(data)
+            print(len(df))
             asyncio.run(insert_to_Db(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now

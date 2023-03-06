@@ -32,12 +32,13 @@ def convert_unix_to_date(time):
     # 년 월 일 시 분 까지만 가져온다 (분단위)
     return datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M')
 
-def get_binance_data(last_id: int) -> List[dict]:
+def get_binance_data(last_id: int) -> List[Optional[dict]]:
     try :
         binance_url = "https://fapi.binance.com/fapi/v1/trades"
         data = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
         binance_param = {
             "symbol": "BTCUSDT",
+            "limit":1000
         }
         response = requests.get(binance_url,params = binance_param).json()
         # 가져온 데이터들중 last_id 보다 큰것만 계속 넣는다
@@ -52,7 +53,7 @@ def get_binance_data(last_id: int) -> List[dict]:
     return [],last_id
 
 
-async def insert_to_Db(data):
+async def insert_to_Db(data : List[dict]):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
@@ -62,14 +63,14 @@ last_id = 0
 
 # 해당 dataFrame 을 분단위로 집계한다
 
-def transform(data : pd.DataFrame):
+def transform(data : pd.DataFrame) -> pd.DataFrame:
     data = data.astype({"id":int,"price":float,"qty":float,"isBuyerMaker":"boolean","quoteQty":float})
     data["time"] = data.apply(lambda x: convert_unix_to_date(x["time"]),axis = 1)
     data["binance_taker_buy_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] == False else 0,axis = 1)
     data["binance_taker_sell_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] else 0,axis = 1)
     return data
 
-def aggregate(data:pd.DataFrame):
+def aggregate(data:pd.DataFrame) -> List[dict]:
     data["binance_taker_buy_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] == False else 0,axis = 1)
     data["binance_taker_sell_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] else 0,axis = 1)
     data = data.groupby("time").agg({"binance_taker_buy_vol":sum,"binance_taker_sell_vol":sum}).reset_index()
@@ -110,8 +111,9 @@ while True:
                         "binance_taker_sell_vol":0
                         }]
                 #초기화
-                df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
+                #df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
             print(data)
+            print(len(df))
             asyncio.run(insert_to_Db(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now

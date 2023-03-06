@@ -6,7 +6,7 @@ from database import get_db
 import asyncio
 import logging
 logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
-
+from typing import List,Optional
 """
 time stamp : utc iso format
 side : Buy,Sell
@@ -32,7 +32,7 @@ def convert_iso_form(time):
 
 
 
-def get_bitmex_data(startTime,endTime):
+def get_bitmex_data(startTime:datetime,endTime:datetime) -> List[Optional[dict]]:
     bitmex_url = 'https://www.bitmex.com/api/v1/trade'
     param = {
         'symbol': 'XBTUSD',
@@ -47,13 +47,13 @@ def get_bitmex_data(startTime,endTime):
     temp = []
     return response
 
-def transform(df):
+def transform(df:pd.DataFrame) -> pd.DataFrame:
     df = df.astype({"trdMatchID":str,"price":float,"size":float,})
     df["timestamp"] = df["timestamp"].apply(lambda x: convert_iso_form(x))
     df["timestamp"] = df["timestamp"].apply(lambda x: convert_unix_to_date(x))
     return df
 
-def aggregate(data:pd.DataFrame):
+def aggregate(data:pd.DataFrame) -> List[dict]:
     data["bitmex_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Buy" else 0,axis = 1)
     data["bitmex_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Sell" else 0,axis = 1)
     data = data.groupby("time").agg({"bitmex_taker_buy_vol":sum,"bitmex_taker_sell_vol":sum}).reset_index()
@@ -63,7 +63,7 @@ def aggregate(data:pd.DataFrame):
 
 
 
-async def insert_to_Db(data):
+async def insert_to_Db(data : List[dict]):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
@@ -107,8 +107,9 @@ while True:
                         "bitmex_taker_buy_vol":0,
                         "bitmex_taker_sell_vol":0
                         }]
-                df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
+                #df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
             print(data)
+            print(len(df))
             asyncio.run(insert_to_Db(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
