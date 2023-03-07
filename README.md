@@ -9,8 +9,9 @@
 dir_structure.txt 에 디렉토리 구조 저장
 
 
+Server Operating System : Centos:7
 
-Server : Binance,Bybit,Bitmex,Flask (Cent os 7)  
+Server : Binance,Bybit,Bitmex,Flask  
 
 Database : NoSQL (mongo database) 
 
