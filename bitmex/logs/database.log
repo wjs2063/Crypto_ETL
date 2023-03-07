@@ -3161,3 +3161,17 @@ INFO:root:separate function is started!!
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-07 04:28  -  2023-03-07 04:29 : Loading into database completed successfully!!
+INFO:root:2023-03-07 04:29  -  2023-03-07 04:30 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:29  -  2023-03-07 04:30 : Loading into database completed successfully!!
