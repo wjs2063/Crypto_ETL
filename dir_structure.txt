@@ -1,0 +1,37 @@
+.
+├── README.md
+├── binance
+│   ├── binance_extract.py
+│   ├── database.py
+│   ├── logs
+│   │   └── database.log
+│   └── requirements.txt
+├── bitmex
+│   ├── bitmex_extract.py
+│   ├── database.py
+│   ├── logs
+│   │   └── database.log
+│   └── requirements.txt
+├── bybit
+│   ├── bybit_extract.py
+│   ├── database.py
+│   ├── logs
+│   │   └── database.log
+│   └── requirements.txt
+├── config
+│   └── database.py
+├── dir_structure.txt
+├── directory_structure.txt
+├── flask
+│   ├── app.py
+│   ├── config
+│   │   └── database.py
+│   ├── logs
+│   │   └── database.log
+│   ├── model
+│   │   └── model_schema.py
+│   └── requirements.txt
+├── server구축.md
+└── 프로젝트 아키텍쳐.pdf
+
+12 directories, 23 files
