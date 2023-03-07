@@ -55,3 +55,26 @@ Websocket : 양방향통신으로 데이터에 변화가있을때 데이터의 �
 ### 5. Log Level
 
 log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상레벨만 기록하기로한다. 
+
+
+
+
+
+
+
+
+
+
+#### 참고 Documentation  
+
+https://docs.python.org/ko/3/library/asyncio.html
+https://pandas.pydata.org/docs/user_guide/index.html#user-guide
+
+https://motor.readthedocs.io/en/stable/api-tornado/motor_client.html    
+https://www.mongodb.com/docs/manual/tutorial/getting-started/  
+
+https://docs.pydantic.dev/usage/types/  
+https://flask-restx.readthedocs.io/en/latest/swagger.html  
+
+
+
