@@ -17,7 +17,7 @@
 ## 2 . Server Architecture 
 ````
 
-  __기술 스택__ : Docker, Centos7, Mongodb ,Flask, Python 
+  __기술스택__ : Docker, Centos7, Mongodb ,Flask, Python 
 
   __OS__ : Centos:7 
 
