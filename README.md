@@ -52,6 +52,6 @@ Websocket : 양방향통신으로 데이터에 변화가있을때 데이터의 �
 ```
 
 
-### Log Level
+### 5. Log Level
 
 log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상레벨만 기록하기로한다. 
