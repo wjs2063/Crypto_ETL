@@ -88,7 +88,6 @@ async def insert_to_database(data : List[Optional[dict]]):
 def aggregate(data:pd.DataFrame) -> List[dict]:
     """
     aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
-
     :param data: pd.DataFrame
     :return: List[dict]
     """
@@ -99,6 +98,15 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     data = data.groupby("time").agg({"bybit_taker_buy_vol":sum,"bybit_taker_sell_vol":sum}).reset_index()
     return data.to_dict(orient = "records")
 
+def preprocessing(df,data,now):
+    logging.info(f"{start_date}  -  {now} : preprocessing started")
+    #중복제거
+    df = df.drop_duplicates()
+    # 시간기준 오름차순 정렬
+    df = df.sort_values(by = "time").reset_index(drop = True)
+    # now 기준으로 data 분리
+    after,before = seperate_data(df,now)
+    return after,before
 
 df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
@@ -114,12 +122,7 @@ while True:
         #데이터 이어붙히고
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            # 중복 제거
-            df = df.drop_duplicates()
-            #시간순 ASC 정렬
-            df = df.sort_values(by = "time").reset_index(drop = True)
-            # 데이터 분리
-            df,data = seperate_data(df)
+            df,data = preprocessing(df,data,now)
             print(data)
             print(len(df))
             #DB 적재
@@ -134,4 +137,3 @@ while True:
     except Exception as e:
         logging.error(f"Exception Error: {e}")
         time.sleep(60)
-

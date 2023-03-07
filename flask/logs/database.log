@@ -245,3 +245,41 @@ INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 16:54:55] "GET /gg/binance/2023-03-06%
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:werkzeug:172.17.0.1 - - [06/Mar/2023 16:55:00] "GET /gg/binance/2023-03-06%2010%3A16/2023-03-06%2017%3A00 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8888
+ * Running on http://172.17.0.2:8888
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-978-851
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "GET /swaggerui/swagger-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "GET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "GET /swaggerui/swagger-ui-bundle.js HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:27] "GET /swagger.json HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:52:54] "GET /gg/binance/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:09] "GET /gg/binance/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:11] "GET /gg/binance/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:12] "GET /gg/binance/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:16] "GET /gg/bybit/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:24] "[33mGET /gg/bybit1/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1[0m" 404 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:35] "[31m[1mGET /gg/bybit/2023-03-06%20300%3A00/2023-03-07%2015%3A00 HTTP/1.1[0m" 400 -
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:42] "[31m[1mGET /gg/bybit/2023-03-06-%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1[0m" 400 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:53:46] "GET /gg/bybit/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:werkzeug:172.17.0.1 - - [07/Mar/2023 05:54:02] "GET /gg/bybit/2023-03-06%2000%3A00/2023-03-07%2015%3A00 HTTP/1.1" 200 -

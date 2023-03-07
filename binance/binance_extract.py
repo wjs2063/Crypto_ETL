@@ -16,7 +16,6 @@ logging.basicConfig(filename = './logs/info.log', encoding = 'utf-8', level = lo
 """
 isBuyerMaker -> True -> + Taker sell Volume ( Maker 가 Buyer 라면 Taker 가 판매자라는뜻 )
 isBuyerMaker -> False -> + Taker buy Volume ( Maker 가 Buyer 가아니면 Taker 가 구매자 라는뜻)
-
 """
 
 # start_time <= x <= end_time 인데 limit 가 1000개로 걸려있다.
@@ -110,7 +109,6 @@ def transform_time_format(df : pd.DataFrame) -> pd.DataFrame:
 def aggregate(data:pd.DataFrame) -> List[dict]:
     """
     aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
-
     :param data: pd.DataFrame
     :return: List[dict]
     """
@@ -120,6 +118,15 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     data = data.groupby("time").agg({"binance_taker_buy_vol":sum,"binance_taker_sell_vol":sum}).reset_index()
     return data.to_dict(orient = "records")
 
+def preprocessing(df,data,now):
+    logging.info(f"{start_date}  -  {now} : preprocessing started")
+    #중복제거
+    df = df.drop_duplicates()
+    # 시간기준 오름차순 정렬
+    df = df.sort_values(by = "time").reset_index(drop = True)
+    # now 기준으로 data 분리
+    after,before = seperate_data(df,now)
+    return after,before
 df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
 # 현재 시점(분단위까지) 기록한후
 # 다음 분단위가 달라지는순간 start <= x < end_time 까지 데이터들을 종합한다.
@@ -138,14 +145,7 @@ while True:
             df = concatenation(df,data)
         # 분 단위가 달라지는 순간
         if start_date != now:
-            logging.info(f"{start_date}  -  {now} : preprocessing started")
-            #중복제거
-            df = df.drop_duplicates()
-            # 시간기준 오름차순 정렬
-            df = df.sort_values(by = "time").reset_index(drop = True)
-            # now 기준으로 data 분리
-            df,data = seperate_data(df,now)
-
+            df,data = preprocessing(df,data,now)
             print(data)
             print(len(df))
             asyncio.run(insert_to_database(data))
@@ -159,5 +159,4 @@ while True:
     except Exception as e:
         logging.error(f"Exception Error: {e}")
         time.sleep(60)
-
 

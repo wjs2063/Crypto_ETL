@@ -13,7 +13,6 @@ time stamp : utc iso format
 side : Buy,Sell
 size : 수량
 price : 가격
-
 """
 
 
@@ -42,8 +41,8 @@ def get_bitmex_data(startTime:datetime,endTime:datetime) -> List[Optional[dict]]
     param = {
         'symbol': 'XBTUSD',
         'count': 1000,
-    "startTime":startTime,
-    "endTime:":endTime
+        "startTime":startTime,
+        "endTime:":endTime
     }
     response = requests.get(bitmex_url ,params = param).json()
     logging.info("get_bitmex_data function is finished!!")
@@ -54,7 +53,6 @@ def transform_time_format(df:pd.DataFrame) -> pd.DataFrame:
     transform function : dataFrame 에 데이터의 형변환 그리고 시간 타입을 datetime 으로 변환한다.
     :param df: pd.DataFrame
     :return: pd.DataFrame
-
     """
     logging.info("transform function is started!!")
     df = df.astype({"trdMatchID":str,"price":float,"size":float,})
@@ -66,7 +64,6 @@ def transform_time_format(df:pd.DataFrame) -> pd.DataFrame:
 def aggregate(data:pd.DataFrame) -> List[dict]:
     """
     aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
-
     :param data: pd.DataFrame
     :return: List[dict]
     """
@@ -126,6 +123,18 @@ async def insert_to_Db(data : List[dict]):
             x.update({"created_at" : datetime.now()})
             db.bitmex.insert_one(x)
 
+
+def preprocessing(df,data,now):
+    if data:
+        df = concatenation(df,data)
+        # 중복 제거
+    df = df.drop_duplicates()
+    # 시간순으로 ASC 정렬
+    df = df.sort_values(by = "timestamp").reset_index(drop = True)
+    # now 기준으로 데이터 분리
+    after,before = seperate_data(df,now)
+    return after,before
+
 # 빈 데이터 프레임 생성
 df = pd.DataFrame(columns = ['timestamp', 'symbol', 'side', 'size', 'price', 'tickDirection', 'trdMatchID', 'grossValue', 'homeNotional', 'foreignNotional', 'trdType'])
 #시작시간기록
@@ -138,18 +147,10 @@ while True:
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
             data = get_bitmex_data(start_date,now)
-            # 데이터 연결
-            if data:
-                df = concatenation(df,data)
-            # 중복 제거
-            df = df.drop_duplicates()
-            # 시간순으로 ASC 정렬
-            df = df.sort_values(by = "timestamp").reset_index(drop = True)
-            # 데이터 분리
-            df,data = seperate_data(df,now)
-            print(data)
-            print(len(df))
-            # DB 적재
+
+            df,data = preprocessing(df,data,now)
+
+            # Async -> Load to Database
             asyncio.run(insert_to_Db(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             # 바뀐시간 기록
@@ -161,4 +162,3 @@ while True:
     except Exception as e:
         logging.error(f"Exception Error: {e}")
         time.sleep(60)
-
