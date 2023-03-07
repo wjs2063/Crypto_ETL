@@ -15,14 +15,14 @@ docker run  --name crypto_mongo -d -p 45000:27017 -it -v /Users/pn_jh/Desktop/fa
 
 
 
-#### Flask 서버
+#### Flask,Bybit,Binance,Bitmex 동일 
 
 STEP 1
 
 ````
 docker pull centos:7
 
-docker run  --name crypto-flask -d -p 35000:8500 -it -v /Users/pn_jh/Desktop/crypto:/desktop centos:7
+docker run  --name flask -d -p container_port:pc_port -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
 
 
 
@@ -63,6 +63,7 @@ source .bashrc
 ````
 
 STEP 5
+이 단계는 각 bybit,bitmex,binance,flask 폴더 내부의 requirements.txt 를 설치한다.
 ````
 pythom -m pip install requirements.txt
 ````
@@ -81,8 +82,8 @@ docker pull jahy5352/crypto-server
 ```
 
 
-docker run  --name binance -d -p 7777:7777 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
-docker run  --name bybit -d -p 8888:8888 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
-docker run  --name bitmex -d -p 9999:9999 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
-docker run  --name flask -d -p 11111:11111 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
+docker run  --name binance -d -p 7777:7777 -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
+docker run  --name bybit -d -p 8888:8888 -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
+docker run  --name bitmex -d -p 9999:9999 -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
+docker run  --name flask -d -p 11111:11111 -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
 ```
