@@ -37,3 +37,7 @@ Architecture.pdf -> [프로젝트아키텍쳐](https://github.com/wjs2063/Crypto
 
 데이터 전처리작업이 동기적으로 이루어지고있으므로 작업의 밀림현상이 발생할수있다. 이럴경우는 multiprocessing 을 활용해볼수있다.
 
+
+### Log Level
+
+log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상레벨만 기록하기로한다. 
