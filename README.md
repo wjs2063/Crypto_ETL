@@ -16,7 +16,7 @@ dir_structure.txt 에 디렉토리 구조 저장
 
 ## 2 . Server Architecture 
 
-Using Docker Container 
+기술 스택 : Docker, Centos7, Mongodb ,Flask, Python 
 
 Server Operating System : Centos:7 
 
