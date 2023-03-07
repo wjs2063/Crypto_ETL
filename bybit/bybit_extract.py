@@ -16,6 +16,44 @@ def convert_iso_form(time):
     timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
     return timestamp
 
+def concatenation(df:pd.DataFrame,data:pd.DataFrame):
+    """
+    concatenation function : 두개의 data 를 이어붙힌다.
+    :param df: pd.DataFrame
+    :param data: pd.DataFrame
+    :return:
+    """
+    logging.info("concatenation function is started!!")
+    data = pd.DataFrame(data)
+    data = transform_time_format(data)
+    data = data[data["time"] >= start_date]
+    df = pd.concat([df,data],ignore_index = True)
+    df = df.reset_index(drop = True)
+    logging.info("concatenation function is finished!!")
+    return df
+
+def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
+    """
+    seperate_data function -> 현재까지받아온 데이터중에서 now 기준 x분.00초 <= t < (x + 1)분.00초 데이터로 분리해낸다.
+    :param df: pd.DataFrame
+    :return: (pd.DataFrame,pd.DataFrame)
+    """
+    logging.info("seperate_data function is started!!")
+    temp = df[(df["time"] < now)]
+    if len(temp) > 0 :
+        index = temp.index[-1] + 1
+        # data 분리
+        data,df = df.iloc[:index,:],df.iloc[index:,:]
+        data = aggregate(data)
+        # data 만 처리
+    else:
+        data = [{"time":start_date,
+                 "bybit_taker_buy_vol":0,
+                 "bybit_taker_sell_vol":0
+                 }]
+    logging.info("separate function is started!!")
+    return df,data
+
 
 
 def get_bybit_data() -> List[Optional[dict]]:
@@ -32,13 +70,13 @@ def get_bybit_data() -> List[Optional[dict]]:
     #시간변환
     return response
 
-def transform(df : pd.DataFrame) -> pd.DataFrame:
+def transform_time_format(df : pd.DataFrame) -> pd.DataFrame:
     data = df.astype({"id":int,"price":float,"qty":float,})
     df["time"] = df["time"].apply(lambda x: convert_iso_form(x))
     df["time"] = df["time"].apply(lambda x: convert_unix_to_date(x))
     return df
 
-async def insert_to_Db(data : List[Optional[dict]]):
+async def insert_to_database(data : List[Optional[dict]]):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
@@ -48,6 +86,14 @@ async def insert_to_Db(data : List[Optional[dict]]):
 
 
 def aggregate(data:pd.DataFrame) -> List[dict]:
+    """
+    aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
+
+    :param data: pd.DataFrame
+    :return: List[dict]
+    """
+    # avoid slice warning error
+    data = data.copy()
     data["bybit_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["qty"] if x["side"] == "Buy" else 0,axis = 1)
     data["bybit_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["qty"] if x["side"] == "Sell" else 0,axis = 1)
     data = data.groupby("time").agg({"bybit_taker_buy_vol":sum,"bybit_taker_sell_vol":sum}).reset_index()
@@ -64,32 +110,20 @@ while True:
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
         data = get_bybit_data()
         if data:
-            data = pd.DataFrame(data)
-            data = transform(data)
-            data = data[data["time"] >= start_date]
-            df = pd.concat([df,data],ignore_index = True)
-            df = df.reset_index(drop = True)
+            df = concatenation(df,data)
         #데이터 이어붙히고
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
+            # 중복 제거
             df = df.drop_duplicates()
+            #시간순 ASC 정렬
             df = df.sort_values(by = "time").reset_index(drop = True)
-            temp = df[(df["time"] < now)]
-            if len(temp) > 0 :
-                #df = df.reset_index(drop = True)
-                index = temp.index[-1] + 1
-                # data 분리
-                data,df = df.iloc[:index,:],df.iloc[index :,:]
-                data = aggregate(data)
-            else:
-                data = [{"time":start_date,
-                        "bybit_taker_buy_vol":0,
-                        "bybit_taker_sell_vol":0
-                        }]
-                #df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
+            # 데이터 분리
+            df,data = seperate_data(df)
             print(data)
             print(len(df))
-            asyncio.run(insert_to_Db(data))
+            #DB 적재
+            asyncio.run(insert_to_database(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
             # data 만 처리

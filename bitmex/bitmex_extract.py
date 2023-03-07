@@ -49,7 +49,7 @@ def get_bitmex_data(startTime:datetime,endTime:datetime) -> List[Optional[dict]]
     logging.info("get_bitmex_data function is finished!!")
     return response
 
-def transform(df:pd.DataFrame) -> pd.DataFrame:
+def transform_time_format(df:pd.DataFrame) -> pd.DataFrame:
     """
     transform function : dataFrame 에 데이터의 형변환 그리고 시간 타입을 datetime 으로 변환한다.
     :param df: pd.DataFrame
@@ -89,7 +89,7 @@ def concatenation(df:pd.DataFrame,data:pd.DataFrame):
     """
     logging.info("concatenation function is started!!")
     data = pd.DataFrame(data)
-    data = transform(data)
+    data = transform_time_format(data)
     data = data[data["timestamp"] >= start_date]
     df = pd.concat([df,data],ignore_index = True)
     df = df.reset_index(drop = True)
@@ -97,7 +97,7 @@ def concatenation(df:pd.DataFrame,data:pd.DataFrame):
     return df
 
 
-def seperate_data(df:pd.DataFrame) -> List[tuple]:
+def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
     """
     seperate_data function -> 현재까지받아온 데이터중에서 x분.00초 <= t < (x + 1)분.00초 데이터로 분리해낸다.
     :param df: pd.DataFrame
@@ -143,10 +143,10 @@ while True:
                 df = concatenation(df,data)
             # 중복 제거
             df = df.drop_duplicates()
-            # 정렬
+            # 시간순으로 ASC 정렬
             df = df.sort_values(by = "timestamp").reset_index(drop = True)
             # 데이터 분리
-            df,data = seperate_data(df)
+            df,data = seperate_data(df,now)
             print(data)
             print(len(df))
             # DB 적재

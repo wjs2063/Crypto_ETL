@@ -26,12 +26,14 @@ start_time = last , end_time = end_time  으로 둔다.
 """
 
 
-# Binance
 def convert_unix_to_date(time):
-    time /= 1000
     # 년 월 일 시 분 까지만 가져온다 (분단위)
+    time /= 1000
     return datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M')
 
+def convert_iso_form(time):
+    timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
+    return timestamp
 def get_binance_data(last_id: int) -> List[Optional[dict]]:
     try :
         binance_url = "https://fapi.binance.com/fapi/v1/trades"
@@ -52,8 +54,45 @@ def get_binance_data(last_id: int) -> List[Optional[dict]]:
         print(e)
     return [],last_id
 
+def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
+    """
+    seperate_data function -> 현재까지받아온 데이터중에서 x분.00초 <= t < (x + 1)분.00초 데이터로 분리해낸다.
+    :param df: pd.DataFrame
+    :return: (pd.DataFrame,pd.DataFrame)
+    """
+    logging.info("seperate_data function is started!!")
+    temp = df[(df["time"] < now)]
+    if len(temp) > 0 :
+        index = temp.index[-1] + 1
+        # data 분리
+        data,df = df.iloc[:index,:],df.iloc[index:,:]
+        data = aggregate(data)
+        # data 만 처리
+    else:
+        data = [{"time":start_date,
+                 "binance_taker_buy_vol":0,
+                 "binance_taker_sell_vol":0
+                 }]
+    logging.info("separate function is started!!")
+    return df,data
 
-async def insert_to_Db(data : List[dict]):
+def concatenation(df:pd.DataFrame,data:pd.DataFrame):
+    """
+    concatenation function : 두개의 data 를 이어붙힌다.
+    :param df: pd.DataFrame
+    :param data: pd.DataFrame
+    :return:
+    """
+    logging.info("concatenation function is started!!")
+    data = pd.DataFrame(data)
+    data = transform_time_format(data)
+    data = data[data["time"] >= start_date]
+    df = pd.concat([df,data],ignore_index = True)
+    df = df.reset_index(drop = True)
+    logging.info("concatenation function is finished!!")
+    return df
+
+async def insert_to_database(data : List[Optional[dict]]):
     async with get_db() as db:
         for x in data:
             x.update({"created_at" : datetime.now()})
@@ -63,14 +102,19 @@ last_id = 0
 
 # 해당 dataFrame 을 분단위로 집계한다
 
-def transform(data : pd.DataFrame) -> pd.DataFrame:
-    data = data.astype({"id":int,"price":float,"qty":float,"isBuyerMaker":"boolean","quoteQty":float})
-    data["time"] = data.apply(lambda x: convert_unix_to_date(x["time"]),axis = 1)
-    data["binance_taker_buy_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] == False else 0,axis = 1)
-    data["binance_taker_sell_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] else 0,axis = 1)
-    return data
+def transform_time_format(df : pd.DataFrame) -> pd.DataFrame:
+    df = df.astype({"id":int,"price":float,"quoteQty":float,"qty":float,"isBuyerMaker":"boolean"})
+    df["time"] = df["time"].apply(lambda x: convert_unix_to_date(x))
+    return df
 
 def aggregate(data:pd.DataFrame) -> List[dict]:
+    """
+    aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
+
+    :param data: pd.DataFrame
+    :return: List[dict]
+    """
+    data = data.copy()
     data["binance_taker_buy_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] == False else 0,axis = 1)
     data["binance_taker_sell_vol"] = data.apply(lambda x: x["quoteQty"] if x["isBuyerMaker"] else 0,axis = 1)
     data = data.groupby("time").agg({"binance_taker_buy_vol":sum,"binance_taker_sell_vol":sum}).reset_index()
@@ -91,30 +135,20 @@ while True:
         data,last_id = get_binance_data(last_id)
         # 계속 데이터를 추가하고
         if data :
-            data = transform(pd.DataFrame(data))
-            df = pd.concat([df,data],ignore_index = True)
+            df = concatenation(df,data)
         # 분 단위가 달라지는 순간
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            # 데이터를 분리한다 .
+            #중복제거
             df = df.drop_duplicates()
+            # 시간기준 오름차순 정렬
             df = df.sort_values(by = "time").reset_index(drop = True)
-            temp = df[(df["time"] < now)]
-            if len(temp) > 0:
-                index = temp.index[-1] + 1
-                data,df = df.iloc[:index,:],df.iloc[index :,:]
-                # 달라진 시점 기록하고
-                data = aggregate(data)
-            else:
-                data = [{"time":start_date,
-                        "binance_taker_buy_vol":0,
-                        "binance_taker_sell_vol":0
-                        }]
-                #초기화
-                #df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
+            # now 기준으로 data 분리
+            df,data = seperate_data(df,now)
+
             print(data)
             print(len(df))
-            asyncio.run(insert_to_Db(data))
+            asyncio.run(insert_to_database(data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
