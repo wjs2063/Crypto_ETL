@@ -16,14 +16,15 @@ dir_structure.txt 에 디렉토리 구조 저장
 
 ## 2 . Server Architecture 
 
+Using Docker Container 
 
-Server Operating System : Centos:7
+Server Operating System : Centos:7 
 
 Server : Binance,Bybit,Bitmex,Flask  
 
 Database : NoSQL (mongo database) 
 
-Architecture.pdf -> (https://github.com/wjs2063/Crypto_ETL/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90.pdf)
+Architecture.pdf -> 프로젝트 아키텍쳐.pdf
 
 
 ### Why Mongodb ?
