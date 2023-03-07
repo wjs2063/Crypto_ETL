@@ -75,7 +75,7 @@ def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
     logging.info("separate function is started!!")
     return df,data
 
-def concatenation(df:pd.DataFrame,data:pd.DataFrame):
+def concatenate(df:pd.DataFrame,data:pd.DataFrame):
     """
     concatenation function : 두개의 data 를 이어붙힌다.
     :param df: pd.DataFrame
@@ -93,13 +93,10 @@ def concatenation(df:pd.DataFrame,data:pd.DataFrame):
 
 async def insert_to_database(data : List[Optional[dict]]):
     async with get_db() as db:
-        for x in data:
-            x.update({"created_at" : datetime.now()})
-            db.binance.insert_one(x)
+        for doc in data:
+            doc.update({"created_at" : datetime.now()})
+            db.binance.insert_one(doc)
 
-last_id = 0
-
-# 해당 dataFrame 을 분단위로 집계한다
 
 def transform_time_format(df : pd.DataFrame) -> pd.DataFrame:
     df = df.astype({"id":int,"price":float,"quoteQty":float,"qty":float,"isBuyerMaker":"boolean"})
@@ -118,7 +115,7 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     data = data.groupby("time").agg({"binance_taker_buy_vol":sum,"binance_taker_sell_vol":sum}).reset_index()
     return data.to_dict(orient = "records")
 
-def preprocessing(df,data,now):
+def preprocessing(df,now):
     logging.info(f"{start_date}  -  {now} : preprocessing started")
     #중복제거
     df = df.drop_duplicates()
@@ -127,7 +124,6 @@ def preprocessing(df,data,now):
     # now 기준으로 data 분리
     after,before = seperate_data(df,now)
     return after,before
-df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
 # 현재 시점(분단위까지) 기록한후
 # 다음 분단위가 달라지는순간 start <= x < end_time 까지 데이터들을 종합한다.
 # 현재 시점 보다 더 작은
@@ -135,20 +131,22 @@ df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerM
 
 # 시간 동일하게 맞춘후
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
+df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
+last_id = 0
 logging.info(f" binance system is started at {start_date}")
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-        data,last_id = get_binance_data(last_id)
+        binance_data,last_id = get_binance_data(last_id)
         # 계속 데이터를 추가하고
-        if data :
-            df = concatenation(df,data)
+        if binance_data :
+            df = concatenate(df,binance_data)
         # 분 단위가 달라지는 순간
         if start_date != now:
-            df,data = preprocessing(df,data,now)
-            print(data)
+            df,db_data = preprocessing(df,now)
+            print(db_data)
             print(len(df))
-            asyncio.run(insert_to_database(data))
+            asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출

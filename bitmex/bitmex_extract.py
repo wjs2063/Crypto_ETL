@@ -77,7 +77,7 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     return data.to_dict(orient = "records")
 
 
-def concatenation(df:pd.DataFrame,data:pd.DataFrame):
+def concatenate(df:pd.DataFrame,data:pd.DataFrame):
     """
     concatenation function : 두개의 data 를 이어붙힌다.
     :param df: pd.DataFrame
@@ -117,16 +117,16 @@ def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
     logging.info("separate function is started!!")
     return df,data
 
-async def insert_to_Db(data : List[dict]):
+async def insert_to_database(data : List[dict]):
     async with get_db() as db:
-        for x in data:
-            x.update({"created_at" : datetime.now()})
-            db.bitmex.insert_one(x)
+        for doc in data:
+            doc.update({"created_at" : datetime.now()})
+            db.bitmex.insert_one(doc)
 
 
 def preprocessing(df,data,now):
     if data:
-        df = concatenation(df,data)
+        df = concatenate(df,data)
         # 중복 제거
     df = df.drop_duplicates()
     # 시간순으로 ASC 정렬
@@ -146,12 +146,12 @@ while True:
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            data = get_bitmex_data(start_date,now)
 
-            df,data = preprocessing(df,data,now)
-
+            bitmex_data = get_bitmex_data(start_date,now)
+            df,db_data = preprocessing(df,bitmex_data,now)
             # Async -> Load to Database
-            asyncio.run(insert_to_Db(data))
+            print(db_data)
+            asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             # 바뀐시간 기록
             start_date = now

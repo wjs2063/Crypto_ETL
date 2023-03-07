@@ -16,7 +16,7 @@ def convert_iso_form(time):
     timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
     return timestamp
 
-def concatenation(df:pd.DataFrame,data:pd.DataFrame):
+def concatenate(df:pd.DataFrame,data:pd.DataFrame):
     """
     concatenation function : 두개의 data 를 이어붙힌다.
     :param df: pd.DataFrame
@@ -78,9 +78,9 @@ def transform_time_format(df : pd.DataFrame) -> pd.DataFrame:
 
 async def insert_to_database(data : List[Optional[dict]]):
     async with get_db() as db:
-        for x in data:
-            x.update({"created_at" : datetime.now()})
-            db.bybit.insert_one(x)
+        for doc in data:
+            doc.update({"created_at" : datetime.now()})
+            db.bybit.insert_one(doc)
 
 
 
@@ -98,7 +98,7 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     data = data.groupby("time").agg({"bybit_taker_buy_vol":sum,"bybit_taker_sell_vol":sum}).reset_index()
     return data.to_dict(orient = "records")
 
-def preprocessing(df,data,now):
+def preprocessing(df,now):
     logging.info(f"{start_date}  -  {now} : preprocessing started")
     #중복제거
     df = df.drop_duplicates()
@@ -116,17 +116,17 @@ logging.info(f" bybit system is started at {start_date}")
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-        data = get_bybit_data()
-        if data:
-            df = concatenation(df,data)
+        bybit_data = get_bybit_data()
+        if bybit_data:
+            df = concatenate(df,bybit_data)
         #데이터 이어붙히고
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
-            df,data = preprocessing(df,data,now)
-            print(data)
+            df,db_data = preprocessing(df,now)
+            print(db_data)
             print(len(df))
             #DB 적재
-            asyncio.run(insert_to_database(data))
+            asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
             # data 만 처리

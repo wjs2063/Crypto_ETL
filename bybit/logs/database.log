@@ -1,0 +1,2264 @@
+INFO:root: bybit system is started at 2023-03-07 12:56
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 12:56  -  2023-03-07 12:57 : preprocessing started
+INFO:root:2023-03-07 12:56  -  2023-03-07 12:57 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 12:56  -  2023-03-07 12:57 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40164628e0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 12:57  -  2023-03-07 12:58 : preprocessing started
+INFO:root:2023-03-07 12:57  -  2023-03-07 12:58 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 12:57  -  2023-03-07 12:58 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40164621f0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 12:58  -  2023-03-07 12:59 : preprocessing started
+INFO:root:2023-03-07 12:58  -  2023-03-07 12:59 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 12:58  -  2023-03-07 12:59 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016424f70 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 12:59  -  2023-03-07 13:00 : preprocessing started
+INFO:root:2023-03-07 12:59  -  2023-03-07 13:00 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 12:59  -  2023-03-07 13:00 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016432fd0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:00  -  2023-03-07 13:01 : preprocessing started
+INFO:root:2023-03-07 13:00  -  2023-03-07 13:01 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:00  -  2023-03-07 13:01 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6550 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:01  -  2023-03-07 13:02 : preprocessing started
+INFO:root:2023-03-07 13:01  -  2023-03-07 13:02 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:01  -  2023-03-07 13:02 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6730 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:02  -  2023-03-07 13:03 : preprocessing started
+INFO:root:2023-03-07 13:02  -  2023-03-07 13:03 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:02  -  2023-03-07 13:03 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6100 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:03  -  2023-03-07 13:04 : preprocessing started
+INFO:root:2023-03-07 13:03  -  2023-03-07 13:04 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:03  -  2023-03-07 13:04 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6e50 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:04  -  2023-03-07 13:05 : preprocessing started
+INFO:root:2023-03-07 13:04  -  2023-03-07 13:05 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:04  -  2023-03-07 13:05 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f68b0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:05  -  2023-03-07 13:06 : preprocessing started
+INFO:root:2023-03-07 13:05  -  2023-03-07 13:06 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:05  -  2023-03-07 13:06 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f68e0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:06  -  2023-03-07 13:07 : preprocessing started
+INFO:root:2023-03-07 13:06  -  2023-03-07 13:07 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:06  -  2023-03-07 13:07 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016462f10 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:07  -  2023-03-07 13:08 : preprocessing started
+INFO:root:2023-03-07 13:07  -  2023-03-07 13:08 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:07  -  2023-03-07 13:08 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016462f70 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:08  -  2023-03-07 13:09 : preprocessing started
+INFO:root:2023-03-07 13:08  -  2023-03-07 13:09 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:08  -  2023-03-07 13:09 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016462520 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:09  -  2023-03-07 13:10 : preprocessing started
+INFO:root:2023-03-07 13:09  -  2023-03-07 13:10 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:09  -  2023-03-07 13:10 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40164320a0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:10  -  2023-03-07 13:11 : preprocessing started
+INFO:root:2023-03-07 13:10  -  2023-03-07 13:11 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:10  -  2023-03-07 13:11 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f61c0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:11  -  2023-03-07 13:12 : preprocessing started
+INFO:root:2023-03-07 13:11  -  2023-03-07 13:12 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:11  -  2023-03-07 13:12 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6250 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:12  -  2023-03-07 13:13 : preprocessing started
+INFO:root:2023-03-07 13:12  -  2023-03-07 13:13 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:12  -  2023-03-07 13:13 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6580 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:13  -  2023-03-07 13:14 : preprocessing started
+INFO:root:2023-03-07 13:13  -  2023-03-07 13:14 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:13  -  2023-03-07 13:14 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6fd0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:14  -  2023-03-07 13:15 : preprocessing started
+INFO:root:2023-03-07 13:14  -  2023-03-07 13:15 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:14  -  2023-03-07 13:15 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6d90 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:15  -  2023-03-07 13:16 : preprocessing started
+INFO:root:2023-03-07 13:15  -  2023-03-07 13:16 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:15  -  2023-03-07 13:16 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6ee0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:16  -  2023-03-07 13:17 : preprocessing started
+INFO:root:2023-03-07 13:16  -  2023-03-07 13:17 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:16  -  2023-03-07 13:17 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f6220 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:17  -  2023-03-07 13:18 : preprocessing started
+INFO:root:2023-03-07 13:17  -  2023-03-07 13:18 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:17  -  2023-03-07 13:18 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40303682b0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:18  -  2023-03-07 13:19 : preprocessing started
+INFO:root:2023-03-07 13:18  -  2023-03-07 13:19 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:18  -  2023-03-07 13:19 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368d00 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:19  -  2023-03-07 13:20 : preprocessing started
+INFO:root:2023-03-07 13:19  -  2023-03-07 13:20 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:19  -  2023-03-07 13:20 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368100 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:20  -  2023-03-07 13:21 : preprocessing started
+INFO:root:2023-03-07 13:20  -  2023-03-07 13:21 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:20  -  2023-03-07 13:21 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368520 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:21  -  2023-03-07 13:22 : preprocessing started
+INFO:root:2023-03-07 13:21  -  2023-03-07 13:22 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:21  -  2023-03-07 13:22 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368a60 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:22  -  2023-03-07 13:23 : preprocessing started
+INFO:root:2023-03-07 13:22  -  2023-03-07 13:23 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:22  -  2023-03-07 13:23 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368760 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:23  -  2023-03-07 13:24 : preprocessing started
+INFO:root:2023-03-07 13:23  -  2023-03-07 13:24 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:23  -  2023-03-07 13:24 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4030368280 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:24  -  2023-03-07 13:25 : preprocessing started
+INFO:root:2023-03-07 13:24  -  2023-03-07 13:25 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:24  -  2023-03-07 13:25 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8070 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:25  -  2023-03-07 13:26 : preprocessing started
+INFO:root:2023-03-07 13:25  -  2023-03-07 13:26 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:25  -  2023-03-07 13:26 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f81f0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:26  -  2023-03-07 13:27 : preprocessing started
+INFO:root:2023-03-07 13:26  -  2023-03-07 13:27 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:26  -  2023-03-07 13:27 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8940 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:27  -  2023-03-07 13:28 : preprocessing started
+INFO:root:2023-03-07 13:27  -  2023-03-07 13:28 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:27  -  2023-03-07 13:28 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8610 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:28  -  2023-03-07 13:29 : preprocessing started
+INFO:root:2023-03-07 13:28  -  2023-03-07 13:29 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:28  -  2023-03-07 13:29 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8190 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:29  -  2023-03-07 13:30 : preprocessing started
+INFO:root:2023-03-07 13:29  -  2023-03-07 13:30 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:29  -  2023-03-07 13:30 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8ac0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:30  -  2023-03-07 13:31 : preprocessing started
+INFO:root:2023-03-07 13:30  -  2023-03-07 13:31 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:30  -  2023-03-07 13:31 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40302f8280 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:31  -  2023-03-07 13:32 : preprocessing started
+INFO:root:2023-03-07 13:31  -  2023-03-07 13:32 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:31  -  2023-03-07 13:32 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40169d9f70 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:32  -  2023-03-07 13:33 : preprocessing started
+INFO:root:2023-03-07 13:32  -  2023-03-07 13:33 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:32  -  2023-03-07 13:33 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40169d9070 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:33  -  2023-03-07 13:34 : preprocessing started
+INFO:root:2023-03-07 13:33  -  2023-03-07 13:34 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:33  -  2023-03-07 13:34 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40169d9ca0 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:34  -  2023-03-07 13:35 : preprocessing started
+INFO:root:2023-03-07 13:34  -  2023-03-07 13:35 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:34  -  2023-03-07 13:35 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x40169d9100 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root: bybit system is started at 2023-03-07 13:36
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 13:36  -  2023-03-07 13:37 : preprocessing started
+INFO:root:2023-03-07 13:36  -  2023-03-07 13:37 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 13:36  -  2023-03-07 13:37 : Loading into database completed successfully!!
+ERROR:concurrent.futures:exception calling callback for <Future at 0x4016463370 state=finished raised InvalidOperation>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 628, in insert_one
+    self._insert_one(
+  File "/usr/local/lib/python3.9/site-packages/pymongo/collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1377, in _retry_internal
+    server = self._select_server(writable_server_selector, session)
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1247, in _select_server
+    topology = self._get_topology()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1203, in _get_topology
+    self._topology.open()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 192, in open
+    self._ensure_opened()
+  File "/usr/local/lib/python3.9/site-packages/pymongo/topology.py", line 592, in _ensure_opened
+    raise InvalidOperation("Cannot use MongoClient after close")
+pymongo.errors.InvalidOperation: Cannot use MongoClient after close
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/_base.py", line 330, in _invoke_callbacks
+    callback(self)
+  File "/usr/local/lib/python3.9/asyncio/futures.py", line 398, in _call_set_state
+    dest_loop.call_soon_threadsafe(_set_state, destination, source)
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 796, in call_soon_threadsafe
+    self._check_closed()
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 515, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
