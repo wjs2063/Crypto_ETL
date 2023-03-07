@@ -3483,3 +3483,11 @@ INFO:root:separate function is started!!
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-07 04:34  -  2023-03-07 04:35 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!

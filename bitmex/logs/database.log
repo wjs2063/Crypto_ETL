@@ -3245,3 +3245,5 @@ INFO:root:separate function is started!!
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-07 04:34  -  2023-03-07 04:35 : Loading into database completed successfully!!
+INFO:root:2023-03-07 04:35  -  2023-03-07 04:36 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
