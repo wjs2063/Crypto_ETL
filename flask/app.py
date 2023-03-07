@@ -28,8 +28,6 @@ class Index(Resource):
 
 
 
-
-
 @api.route("/gg/<string:stockMarket>/<string:startTime>/<string:endTime>")
 class Index(Resource):
     def get(self, stockMarket,startTime,endTime):
