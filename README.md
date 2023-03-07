@@ -15,6 +15,7 @@
 
 
 ## 2 . Server Architecture 
+````
 
   __기술 스택__ : Docker, Centos7, Mongodb ,Flask, Python 
 
@@ -23,6 +24,7 @@
   __Server__ : Binance,Bybit,Bitmex,Flask  
 
   __Database__ : NoSQL (mongo database) 
+````
 
 Architecture.pdf -> [프로젝트아키텍쳐](https://github.com/wjs2063/Crypto_ETL/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90.pdf)
 
