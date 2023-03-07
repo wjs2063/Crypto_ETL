@@ -146,15 +146,18 @@ while True:
             df,db_data = preprocessing(df,now)
             print(db_data)
             print(len(df))
-            asyncio.run(insert_to_database(db_data))
+            #asyncio.run(insert_to_database(db_data))
+            asyncio.get_event_loop().run_until_complete(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
         # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
         time.sleep(10)
     except KeyError as k:
         logging.error(f"Key Error:{k}")
+        print(k)
         time.sleep(60 * 10)
     except Exception as e:
         logging.error(f"Exception Error: {e}")
+        print(e)
         time.sleep(60)
 
