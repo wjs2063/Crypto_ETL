@@ -9,13 +9,21 @@
 dir_structure.txt 에 디렉토리 구조 저장
 
 
+
+
+
+
+
+## 2 . Server Architecture 
+
+
 Server Operating System : Centos:7
 
 Server : Binance,Bybit,Bitmex,Flask  
 
 Database : NoSQL (mongo database) 
 
-
+Architecture.pdf -> 
 
 
 ### Why Mongodb ?
