@@ -12,9 +12,11 @@ MONGO_DETAILS = "mongodb://172.30.1.56:45000/test"
 #db = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
 @contextlib.asynccontextmanager
 async def get_db():
-    db = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS).local
+    db = MongoClient(MONGO_DETAILS)
     try:
         yield db
+    except Exception as e:
+        print(e)
     finally:
         db.close()
 
@@ -27,14 +29,6 @@ def sync_db():
     finally:
         db.close()
         logging.info("Mongo database disconnected!! ")
-
-def sumOfvolumes(exchange_name,data):
-    sell_vol,buy_vol = 0,0
-
-    for v in data:
-        sell_vol += v[f"{exchange_name}_taker_sell_vol"]
-        buy_vol += v[f"{exchange_name}_taker_sell_vol"]
-    return sell_vol,buy_vol
 
 
 def get_exchange_data(exchange_name,startTime,endTime):
