@@ -67,10 +67,22 @@ STEP 5
 pythom -m pip install requirements.txt
 ````
 
+### Pulling Docker image
+
+
+해당 image 로 Bybit,Bitmex,Binance,Flask 도커 컨테이너를 띄운다
+
+````
+docker pull jahy5352/crypto-server
+````
 
 #### Docker container Image 
+
 ```
-docker run  --name binance -d -p 7777:7777 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
-docker run  --name bybit -d -p 8888:8888 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
-docker run  --name bitmex -d -p 9999:9999 -it -v /Users/pn_jh/Desktop/crypto:/desktop flask-server
+
+
+docker run  --name binance -d -p 7777:7777 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
+docker run  --name bybit -d -p 8888:8888 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
+docker run  --name bitmex -d -p 9999:9999 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
+docker run  --name flask -d -p 11111:11111 -it -v /Users/pn_jh/Desktop/crypto:/desktop crypto-server
 ```
