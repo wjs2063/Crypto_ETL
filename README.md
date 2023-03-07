@@ -42,6 +42,15 @@ Swagger 를 사용하여 API 관리가 쉽도록 함.
 
 데이터 전처리작업이 동기적으로 이루어지고있으므로 작업의 밀림현상이 발생할수있다. 이럴경우는 multiprocessing 을 활용해볼수있다.
 
+## 4. Use Rest API vs Websocket
+```
+Rest API : stateless 하기때문에 recent_trade data 를 가져오기위해서는 잦은 호출을 해야함
+반면 
+Websocket : 양방향통신으로 데이터에 변화가있을때 데이터의 전송이 흘러들어옴 . 
+
+이번 프로젝트에선 RestAPI 로 구현하고, 추후 Websocket 버젼으로 확장하는 방안으로 한다.
+```
+
 
 ### Log Level
 
