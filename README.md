@@ -23,7 +23,7 @@ Server : Binance,Bybit,Bitmex,Flask
 
 Database : NoSQL (mongo database) 
 
-Architecture.pdf -> 
+Architecture.pdf -> (https://github.com/wjs2063/Crypto_ETL/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90.pdf)
 
 
 ### Why Mongodb ?
