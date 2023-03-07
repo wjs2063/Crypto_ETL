@@ -2637,3 +2637,745 @@ INFO:root:separate function is started!!
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-07 03:45  -  2023-03-07 03:46 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:46  -  2023-03-07 03:47 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:46  -  2023-03-07 03:47 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:47  -  2023-03-07 03:48 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:47  -  2023-03-07 03:48 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:48  -  2023-03-07 03:49 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:48  -  2023-03-07 03:49 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:49  -  2023-03-07 03:50 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:49  -  2023-03-07 03:50 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:50  -  2023-03-07 03:51 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:50  -  2023-03-07 03:51 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:51  -  2023-03-07 03:52 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:51  -  2023-03-07 03:52 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:52  -  2023-03-07 03:53 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:52  -  2023-03-07 03:53 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:53  -  2023-03-07 03:54 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:53  -  2023-03-07 03:54 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:54  -  2023-03-07 03:55 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:54  -  2023-03-07 03:55 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:55  -  2023-03-07 03:56 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:55  -  2023-03-07 03:56 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:56  -  2023-03-07 03:57 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:56  -  2023-03-07 03:57 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:57  -  2023-03-07 03:58 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:57  -  2023-03-07 03:58 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:58  -  2023-03-07 03:59 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:58  -  2023-03-07 03:59 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 03:59  -  2023-03-07 04:00 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 03:59  -  2023-03-07 04:00 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:00  -  2023-03-07 04:01 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:00  -  2023-03-07 04:01 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:01  -  2023-03-07 04:02 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:01  -  2023-03-07 04:02 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:02  -  2023-03-07 04:03 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:02  -  2023-03-07 04:03 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:03  -  2023-03-07 04:04 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:03  -  2023-03-07 04:04 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:04  -  2023-03-07 04:05 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:04  -  2023-03-07 04:05 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:05  -  2023-03-07 04:06 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:05  -  2023-03-07 04:06 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:06  -  2023-03-07 04:07 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:06  -  2023-03-07 04:07 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:07  -  2023-03-07 04:08 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:07  -  2023-03-07 04:08 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:08  -  2023-03-07 04:09 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:08  -  2023-03-07 04:09 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:09  -  2023-03-07 04:10 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:09  -  2023-03-07 04:10 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:10  -  2023-03-07 04:11 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:10  -  2023-03-07 04:11 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:11  -  2023-03-07 04:12 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:11  -  2023-03-07 04:12 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:12  -  2023-03-07 04:13 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:12  -  2023-03-07 04:13 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:13  -  2023-03-07 04:14 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:13  -  2023-03-07 04:14 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:14  -  2023-03-07 04:15 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:14  -  2023-03-07 04:15 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:15  -  2023-03-07 04:16 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:15  -  2023-03-07 04:16 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:16  -  2023-03-07 04:17 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:16  -  2023-03-07 04:17 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:17  -  2023-03-07 04:18 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:17  -  2023-03-07 04:18 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:18  -  2023-03-07 04:19 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:18  -  2023-03-07 04:19 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:19  -  2023-03-07 04:20 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:19  -  2023-03-07 04:20 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:20  -  2023-03-07 04:21 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:20  -  2023-03-07 04:21 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:21  -  2023-03-07 04:22 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:21  -  2023-03-07 04:22 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:22  -  2023-03-07 04:23 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:22  -  2023-03-07 04:23 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:23  -  2023-03-07 04:24 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:23  -  2023-03-07 04:24 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:24  -  2023-03-07 04:25 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:24  -  2023-03-07 04:25 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:25  -  2023-03-07 04:26 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:25  -  2023-03-07 04:26 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:26  -  2023-03-07 04:27 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:26  -  2023-03-07 04:27 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:27  -  2023-03-07 04:28 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:27  -  2023-03-07 04:28 : Loading into database completed successfully!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:concatenation function is finished!!
+INFO:root:2023-03-07 04:28  -  2023-03-07 04:29 : preprocessing started
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-07 04:28  -  2023-03-07 04:29 : Loading into database completed successfully!!
