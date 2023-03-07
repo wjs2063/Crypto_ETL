@@ -5,8 +5,8 @@
 
 
 
-## 1. Directory Sturcture 
-dir_structure.txt 에 디렉토리 구조 저장
+## 1. Directory Sturcture
+    dir_structure.txt 에 디렉토리 구조 저장
 
 
 
@@ -16,13 +16,13 @@ dir_structure.txt 에 디렉토리 구조 저장
 
 ## 2 . Server Architecture 
 
-기술 스택 : Docker, Centos7, Mongodb ,Flask, Python 
+  __기술 스택__ : Docker, Centos7, Mongodb ,Flask, Python 
 
-Server Operating System : Centos:7 
+  __OS__ : Centos:7 
 
-Server : Binance,Bybit,Bitmex,Flask  
+  __Server__ : Binance,Bybit,Bitmex,Flask  
 
-Database : NoSQL (mongo database) 
+  __Database__ : NoSQL (mongo database) 
 
 Architecture.pdf -> [프로젝트아키텍쳐](https://github.com/wjs2063/Crypto_ETL/blob/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90.pdf)
 
