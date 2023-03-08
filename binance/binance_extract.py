@@ -33,7 +33,7 @@ def convert_unix_to_date(time):
 def convert_iso_form(time):
     timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
     return timestamp
-def get_binance_data(last_id: int) -> List[Optional[dict]]:
+def get_binance_data() -> List[Optional[dict]]:
     try :
         binance_url = "https://fapi.binance.com/fapi/v1/trades"
         data = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
@@ -43,15 +43,11 @@ def get_binance_data(last_id: int) -> List[Optional[dict]]:
         }
         response = requests.get(binance_url,params = binance_param).json()
         # 가져온 데이터들중 last_id 보다 큰것만 계속 넣는다
-        data = []
-        for item in response:
-            if item["id"] <= last_id : continue
-            last_id = item["id"]
-            data.append(item)
-        return data,last_id
+
+        return response
     except Exception as e :
         print(e)
-    return [],last_id
+    return response
 
 def seperate_data(df:pd.DataFrame,now) -> List[tuple]:
     """
@@ -132,20 +128,17 @@ def preprocessing(df,now):
 # 시간 동일하게 맞춘후
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
-last_id = 0
 logging.info(f" binance system is started at {start_date}")
 while True:
     try :
         now = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
-        binance_data,last_id = get_binance_data(last_id)
+        binance_data = get_binance_data()
         # 계속 데이터를 추가하고
         if binance_data :
             df = concatenate(df,binance_data)
         # 분 단위가 달라지는 순간
         if start_date != now:
             df,db_data = preprocessing(df,now)
-            print(db_data)
-            print(len(df))
             #asyncio.run(insert_to_database(db_data))
             asyncio.get_event_loop().run_until_complete(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")

@@ -123,14 +123,12 @@ while True:
         if start_date != now:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
             df,db_data = preprocessing(df,now)
-            print(db_data)
-            print(len(df))
             #DB 적재
             asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now
             # data 만 처리
-        time.sleep(10)
+        time.sleep(20)
     except KeyError as k:
         logging.error(f"Key Error:{k}")
         time.sleep(60 * 10)

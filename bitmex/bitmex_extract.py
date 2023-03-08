@@ -150,12 +150,11 @@ while True:
             bitmex_data = get_bitmex_data(start_date,now)
             df,db_data = preprocessing(df,bitmex_data,now)
             # Async -> Load to Database
-            print(db_data)
             asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             # 바뀐시간 기록
             start_date = now
-        time.sleep(5)
+        time.sleep(20)
     except KeyError as k:
         logging.error(f"Key Error:{k}")
         time.sleep(60 * 10)
