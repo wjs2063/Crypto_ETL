@@ -2,6 +2,16 @@
 # Exchange ETL Pipline Project  
 
 ## Getting start 
+
+아래 코드를 이용하여 binance,bybit,bitmex,flask 서버를 개설한다. Database 는 mongo:latest 를 이용한다
+
+마운트할 디렉토리를 지정하고 로컬디렉토리와 컨테이너 디렉토리를 연결한다. 공유디렉토리  
+
+각 서버의 목적에 맞는 git repository 의 폴더를 넣어준다. 예를들어 binance 면 해당 reposit 의 binance 폴더를 넣어주면된다.  
+
+
+
+
 ````
 docker pull jahy5352/crypto-server
 
@@ -35,7 +45,11 @@ docker run  --name [원하는이름] -d -p [로컬포트]:[컨테이너포트] -
 각각의 거래소 컨테이너 내부에서 아래 코드를 실행한다
 
 ```
-python [exchange]_extract.py
+python [exchange]_extract.py 
+
+예시
+
+python binance_extract.py
 ```
 
 
