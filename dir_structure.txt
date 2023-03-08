@@ -1,9 +1,6 @@
 .
 ├── README.md
 ├── binance
-│   ├── __pycache__
-│   │   ├── constant.cpython-39.pyc
-│   │   └── database.cpython-39.pyc
 │   ├── binance_extract.py
 │   ├── constant.py
 │   ├── database.py
@@ -12,9 +9,6 @@
 │   ├── requirements.txt
 │   └── test.py
 ├── bitmex
-│   ├── __pycache__
-│   │   ├── constant.cpython-39.pyc
-│   │   └── database.cpython-39.pyc
 │   ├── bitmex_extract.py
 │   ├── constant.py
 │   ├── database.py
@@ -23,9 +17,6 @@
 │   ├── requirements.txt
 │   └── test.py
 ├── bybit
-│   ├── __pycache__
-│   │   ├── constant.cpython-39.pyc
-│   │   └── database.cpython-39.pyc
 │   ├── bybit_extract.py
 │   ├── constant.py
 │   ├── database.py
@@ -37,13 +28,8 @@
 │   └── database.py
 ├── dir_structure.txt
 ├── flask
-│   ├── __pycache__
-│   │   ├── app.cpython-39.pyc
-│   │   └── database.cpython-39.pyc
 │   ├── app.py
 │   ├── config
-│   │   ├── __pycache__
-│   │   │   └── constant.cpython-39.pyc
 │   │   └── constant.py
 │   ├── database.py
 │   ├── logs
@@ -54,4 +40,4 @@
 ├── server구축.md
 └── 프로젝트 아키텍쳐.pdf
 
-17 directories, 38 files
+12 directories, 29 files
