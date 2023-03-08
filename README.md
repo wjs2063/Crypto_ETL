@@ -1,7 +1,30 @@
 
 # Exchange ETL Pipline Project  
 
+## Getting start 
 
+1. Binance, Bybit, Bitmex 거래데이터를 1분단위로 집계하여 데이터베이스에 저장하는 ETL 파이프라인 구축
+2. Flask 를 이용하여 start_date <= time < end_date 에있는 분단위 데이터를 추출하여 API 로 서빙
+
+* Docker Container 를 총 5대 띄운다 ( Binance,Bybit,Bitmex, Flask , Mongodb ) 
+
+* 각각의 거래소 및 Flask 컨테이너 내부에 Binance,Bybit,Bitmex,Flask 폴더를 둔다. (현재는 repository에 합쳐놓음) 
+
+
+
+각각의 거래소 컨테이너 내부에서 아래 코드를 실행한다
+
+```
+python [exchange]_extract.py
+```
+
+
+* Flask 
+http://localhost:8888 -> Swagger docs page -> API test 
+
+````
+flask 폴더로 들어가 flask run --host=0.0.0.0 --port=8888
+````
 
 
 
