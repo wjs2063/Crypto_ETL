@@ -1,31 +1,51 @@
 .
 ├── README.md
 ├── binance
+│   ├── __pycache__
+│   │   ├── constant.cpython-39.pyc
+│   │   └── database.cpython-39.pyc
 │   ├── binance_extract.py
+│   ├── constant.py
 │   ├── database.py
 │   ├── logs
-│   │   └── database.log
-│   └── requirements.txt
+│   │   └── info.log
+│   ├── requirements.txt
+│   └── test.py
 ├── bitmex
+│   ├── __pycache__
+│   │   ├── constant.cpython-39.pyc
+│   │   └── database.cpython-39.pyc
 │   ├── bitmex_extract.py
+│   ├── constant.py
 │   ├── database.py
 │   ├── logs
-│   │   └── database.log
-│   └── requirements.txt
+│   │   └── info.log
+│   ├── requirements.txt
+│   └── test.py
 ├── bybit
+│   ├── __pycache__
+│   │   ├── constant.cpython-39.pyc
+│   │   └── database.cpython-39.pyc
 │   ├── bybit_extract.py
+│   ├── constant.py
 │   ├── database.py
 │   ├── logs
-│   │   └── database.log
-│   └── requirements.txt
+│   │   └── info.log
+│   ├── requirements.txt
+│   └── test.py
 ├── config
 │   └── database.py
 ├── dir_structure.txt
-├── directory_structure.txt
 ├── flask
+│   ├── __pycache__
+│   │   ├── app.cpython-39.pyc
+│   │   └── database.cpython-39.pyc
 │   ├── app.py
 │   ├── config
-│   │   └── database.py
+│   │   ├── __pycache__
+│   │   │   └── constant.cpython-39.pyc
+│   │   └── constant.py
+│   ├── database.py
 │   ├── logs
 │   │   └── database.log
 │   ├── model
@@ -34,4 +54,4 @@
 ├── server구축.md
 └── 프로젝트 아키텍쳐.pdf
 
-12 directories, 23 files
+17 directories, 38 files

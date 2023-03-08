@@ -97,13 +97,6 @@ class Binance:
         logging.info("concatenation function is finished!!")
         return df
 
-    async def insert_to_database(self, data: List[Optional[dict]]):
-        async with get_db() as db:
-            for doc in data:
-                doc.update({"created_at": datetime.now()})
-                db.binance.insert_one(doc)
-        logging.info("Loading into database completed successfully!!")
-
     def preprocessing(self,df,start_date,now):
         #중복제거
         df = df.drop_duplicates()
@@ -142,6 +135,13 @@ class Binance:
                 logging.error(f"Exception Error: {e}")
                 print(e)
                 time.sleep(60)
+    async def insert_to_database(self, data: List[Optional[dict]]):
+        async with get_db() as db:
+            for doc in data:
+                doc.update({"created_at": datetime.now()})
+                db.binance.insert_one(doc)
+        logging.info("Loading into database completed successfully!!")
+
 
 Binance = Binance()
 Binance.excute()

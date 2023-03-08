@@ -86,13 +86,6 @@ class BYBIT:
         df["time"] = df["time"].apply(lambda x: self.convert_unix_to_date(x))
         return df
 
-    async def insert_to_database(self,data : List[Optional[dict]]):
-        async with get_db() as db:
-            for doc in data:
-                doc.update({"created_at" : datetime.now()})
-                db.bybit.insert_one(doc)
-
-
     def aggregate(self,data:pd.DataFrame) -> List[dict]:
         """
         aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.
@@ -115,7 +108,6 @@ class BYBIT:
         # now 기준으로 data 분리
         after,before = self.seperate_data(df,start_date,now)
         return after,before
-
 
     def excute(self):
         start_date = self.get_current_time()
@@ -142,6 +134,11 @@ class BYBIT:
             except Exception as e:
                 logging.error(f"Exception Error: {e}")
                 time.sleep(60)
+    async def insert_to_database(self,data : List[Optional[dict]]):
+        async with get_db() as db:
+            for doc in data:
+                doc.update({"created_at" : datetime.now()})
+                db.bybit.insert_one(doc)
 
 Bybit = BYBIT()
 Bybit.excute()

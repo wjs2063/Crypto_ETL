@@ -124,13 +124,6 @@ class BITMEX:
         logging.info("separate function is started!!")
         return df,data
 
-    async def insert_to_database(self,data : List[dict]):
-        async with get_db() as db:
-            for doc in data:
-                doc.update({"created_at" : datetime.now()})
-                db.bitmex.insert_one(doc)
-
-
     def preprocessing(self,df,data,start_date,now):
         if data:
             df = self.concatenate(df,start_date,data)
@@ -168,6 +161,11 @@ class BITMEX:
                 logging.error(f"Exception Error: {e}")
                 print(e)
                 time.sleep(60)
+    async def insert_to_database(self,data : List[Optional[dict]]):
+        async with get_db() as db:
+            for doc in data:
+                doc.update({"created_at" : datetime.now()})
+                db.bybit.insert_one(doc)
 
 
 Bitmex = BITMEX()
