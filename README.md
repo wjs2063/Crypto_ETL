@@ -63,7 +63,10 @@ log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상
 
 
 
+### 7. Data schema
 
+
+[Database Schema.pdf](https://github.com/wjs2063/Crypto_ETL/files/10918916/Database.Schema.pdf)
 
 
 #### 참고 Documentation  
