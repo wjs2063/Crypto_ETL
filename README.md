@@ -27,6 +27,13 @@ docker pull mongo:latest
 docker run  --name mongodb -d -p 9999:27017 -it -v /Users/pn_jh/Desktop/crypto:/desktop mongo
 ````
 
+* 이전 작업을 통하여 컨테이너를 생성했다면 컨테이너에 접속하여 각 서버에 맞는 library 들을 설치한다
+
+````
+python -m pip install -r requirements.txt
+````
+
+
 * Directory/File explanation
 예시 (Binance) 이하동일(bybit,bitmex)
 
