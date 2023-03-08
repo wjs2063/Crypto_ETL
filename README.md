@@ -57,8 +57,9 @@ Websocket : 양방향통신으로 데이터에 변화가있을때 데이터의 �
 log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상레벨만 기록하기로한다. 
 
 
+### 6. Flow chart 
 
-
+<img width="400" alt="crypto_ETL Flow chart" src="https://user-images.githubusercontent.com/76778082/223666950-8a4d7aa4-966f-411b-b351-d1d054abe0bf.png">
 
 
 
