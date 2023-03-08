@@ -3,6 +3,19 @@
 
 ## Getting start 
 
+
+## * Directory/File explanation
+예시 (Binance) 이하동일(bybit,bitmex)
+
+    - logs : 로그파일 기록하는 폴더  
+    - constant.py : 사용자 정의상수 기록 파일
+    - database.py : database 관련 파일 
+    - requriements.txt : 설치 및 필요한  library 정보
+    - binance_extract.py : binance_API 로부터 ETL 작업 수행하는 코드 
+<br></br>
+
+
+
 1. Binance, Bybit, Bitmex 거래데이터를 1분단위로 집계하여 데이터베이스에 저장하는 ETL 파이프라인 구축
 2. Flask 를 이용하여 start_date <= time < end_date 에있는 분단위 데이터를 추출하여 API 로 서빙
 
