@@ -7,3 +7,4 @@ BINANCE_TAKER_SELL_VOL = "binance_taker_sell_vol"
 
 SYMBOL = "BTCUSDT"
 LIMIT = 1000
+

@@ -4,25 +4,13 @@ import contextlib
 import logging
 from config.constant import *
 logging.basicConfig(filename = './logs/database.log', encoding = 'utf-8', level = logging.INFO)
-MONGO_DETAILS = "mongodb://172.30.1.56:45000/test"
+from config.constant import *
 
 
-# make user_database
-
-#db = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
-@contextlib.asynccontextmanager
-async def get_db():
-    db = MongoClient(MONGO_DETAILS)
-    try:
-        yield db.local
-    except Exception as e:
-        print(e)
-    finally:
-        db.close()
 
 @contextlib.contextmanager
 def sync_db():
-    db = MongoClient(MONGO_DETAILS)
+    db = MongoClient(MONGO_DETAILES)
     try:
         yield db.local
         logging.info("Mongo database connected!! ")
@@ -36,9 +24,9 @@ def get_exchangedata_from_database(exchange_name,startTime,endTime,limit):
         return data
 def get_all_exchange_data(startTime,endTime,limit):
     logging.info("get_all_exchange_data started!!")
-    binance_data = get_exchangedata_from_database("binance",startTime,endTime,limit)
-    bybit_data = get_exchangedata_from_database("bybit",startTime,endTime,limit)
-    bitmex_data = get_exchangedata_from_database("bitmex",startTime,endTime,limit)
+    binance_data = get_exchangedata_from_database(BINANCE,startTime,endTime,limit)
+    bybit_data = get_exchangedata_from_database(BYBIT,startTime,endTime,limit)
+    bitmex_data = get_exchangedata_from_database(BITMEX,startTime,endTime,limit)
     answer = []
 
     for binance,bybit,bitmex in zip(binance_data,bybit_data,bitmex_data):
@@ -55,12 +43,12 @@ def get_all_exchange_data(startTime,endTime,limit):
 
 def get_exchange_data(exchange_name,startTime,endTime,limit):
     logging.info("get_exchange_data started!!")
-    if exchange_name == "binance":
-        return get_exchangedata_from_database("binance",startTime,endTime,limit)
-    elif exchange_name == "bybit":
-        return get_exchangedata_from_database("bybit",startTime,endTime,limit)
-    elif exchange_name == "bitmex":
-        return get_exchangedata_from_database("bitmex",startTime,endTime,limit)
+    if exchange_name == BINANCE:
+        return get_exchangedata_from_database(BINANCE,startTime,endTime,limit)
+    elif exchange_name == BYBIT:
+        return get_exchangedata_from_database(BYBIT,startTime,endTime,limit)
+    elif exchange_name == BITMEX:
+        return get_exchangedata_from_database(BITMEX,startTime,endTime,limit)
     else:
         return get_all_exchange_data(startTime,endTime,limit)
     logging.info("get_exchange_data finished!!")

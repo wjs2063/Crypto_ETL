@@ -1699,3 +1699,13 @@ INFO:root:Mongo database connected!!
 INFO:root:Mongo database disconnected!! 
 INFO:root:get_all_exchange_data finished!!
 INFO:werkzeug:172.17.0.1 - - [08/Mar/2023 07:10:09] "GET /taker_volume/all_exchange/2022-03-01%2000%3A00/2025-03-10%2000%3A00/1000 HTTP/1.1" 200 -
+INFO:root:get_exchange_data started!!
+INFO:root:get_all_exchange_data started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:get_all_exchange_data finished!!
+INFO:werkzeug:172.17.0.1 - - [08/Mar/2023 07:20:53] "GET /taker_volume/all_exchange/2022-03-10%2000%3A00/2025-03-10%2000%3A00 HTTP/1.1" 200 -

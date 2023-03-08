@@ -93,8 +93,6 @@ class BYBIT:
                 db.bybit.insert_one(doc)
 
 
-
-
     def aggregate(self,data:pd.DataFrame) -> List[dict]:
         """
         aggregate function : time 을 기준으로 Taker_sell_vol,Taker_buy_vol 을 집계한다.

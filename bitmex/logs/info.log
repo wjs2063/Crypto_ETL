@@ -1020,3 +1020,605 @@ INFO:root:separate function is started!!
 INFO:root:Mongo database connected!! 
 INFO:root:Mongo database disconnected!! 
 INFO:root:2023-03-08 07:09  -  2023-03-08 07:10 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:10  -  2023-03-08 07:11 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:10  -  2023-03-08 07:11 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:11  -  2023-03-08 07:12 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:11  -  2023-03-08 07:12 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:12  -  2023-03-08 07:13 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:12  -  2023-03-08 07:13 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:13  -  2023-03-08 07:14 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:13  -  2023-03-08 07:14 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:14  -  2023-03-08 07:15 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:14  -  2023-03-08 07:15 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:15  -  2023-03-08 07:16 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:15  -  2023-03-08 07:16 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:16  -  2023-03-08 07:17 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:16  -  2023-03-08 07:17 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:17  -  2023-03-08 07:18 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:17  -  2023-03-08 07:18 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:18  -  2023-03-08 07:19 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:18  -  2023-03-08 07:19 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:19  -  2023-03-08 07:20 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:19  -  2023-03-08 07:20 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:20  -  2023-03-08 07:21 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:20  -  2023-03-08 07:21 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:21  -  2023-03-08 07:22 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:21  -  2023-03-08 07:22 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:22  -  2023-03-08 07:23 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:22  -  2023-03-08 07:23 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:23  -  2023-03-08 07:24 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:23  -  2023-03-08 07:24 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:24  -  2023-03-08 07:25 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:24  -  2023-03-08 07:25 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:25  -  2023-03-08 07:26 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:25  -  2023-03-08 07:26 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:26  -  2023-03-08 07:27 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:26  -  2023-03-08 07:27 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:27  -  2023-03-08 07:28 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:27  -  2023-03-08 07:28 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:28  -  2023-03-08 07:29 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:28  -  2023-03-08 07:29 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:29  -  2023-03-08 07:30 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:29  -  2023-03-08 07:30 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:30  -  2023-03-08 07:31 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:30  -  2023-03-08 07:31 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:31  -  2023-03-08 07:32 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:31  -  2023-03-08 07:32 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:32  -  2023-03-08 07:33 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:32  -  2023-03-08 07:33 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:33  -  2023-03-08 07:34 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:33  -  2023-03-08 07:34 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:34  -  2023-03-08 07:35 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:34  -  2023-03-08 07:35 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:35  -  2023-03-08 07:36 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:35  -  2023-03-08 07:36 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:36  -  2023-03-08 07:37 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:36  -  2023-03-08 07:37 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:37  -  2023-03-08 07:38 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:37  -  2023-03-08 07:38 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:38  -  2023-03-08 07:39 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:38  -  2023-03-08 07:39 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:39  -  2023-03-08 07:40 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:39  -  2023-03-08 07:40 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:40  -  2023-03-08 07:41 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:40  -  2023-03-08 07:41 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:41  -  2023-03-08 07:42 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:41  -  2023-03-08 07:42 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:42  -  2023-03-08 07:43 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:42  -  2023-03-08 07:43 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:43  -  2023-03-08 07:44 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:43  -  2023-03-08 07:44 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:44  -  2023-03-08 07:45 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:44  -  2023-03-08 07:45 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:45  -  2023-03-08 07:46 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:45  -  2023-03-08 07:46 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:46  -  2023-03-08 07:47 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:46  -  2023-03-08 07:47 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:47  -  2023-03-08 07:48 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:47  -  2023-03-08 07:48 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:48  -  2023-03-08 07:49 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:48  -  2023-03-08 07:49 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:49  -  2023-03-08 07:50 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:49  -  2023-03-08 07:50 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:50  -  2023-03-08 07:51 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:50  -  2023-03-08 07:51 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:51  -  2023-03-08 07:52 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:51  -  2023-03-08 07:52 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:52  -  2023-03-08 07:53 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:52  -  2023-03-08 07:53 : Loading into database completed successfully!!
+INFO:root:2023-03-08 07:53  -  2023-03-08 07:54 : preprocessing started
+INFO:root:get_bitmex_data function is started!!
+INFO:root:get_bitmex_data function is finished!!
+INFO:root:concatenation function is started!!
+INFO:root:transform function is started!!
+INFO:root:transform function is finished!!
+INFO:root:concatenation function is finished!!
+INFO:root:seperate_data function is started!!
+INFO:root:aggregate function is started!!
+INFO:root:aggrgate function is finished!!
+INFO:root:separate function is started!!
+INFO:root:Mongo database connected!! 
+INFO:root:Mongo database disconnected!! 
+INFO:root:2023-03-08 07:53  -  2023-03-08 07:54 : Loading into database completed successfully!!

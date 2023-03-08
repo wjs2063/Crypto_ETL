@@ -20,7 +20,7 @@ logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logg
 # {'error': {'message': 'Rate limit exceeded, retry in 10 minutes.', 'name': 'RateLimitError'}}
 
 class BITMEX:
-    def __init__(selfs):
+    def __init__(self):
         pass
 
     def get_current_time(self):

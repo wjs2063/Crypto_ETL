@@ -9,23 +9,7 @@ import logging
 
 logging.basicConfig(filename = 'info.log', encoding = 'utf-8', level = logging.DEBUG)
 app = Flask(__name__)
-
 api = Api(app)
-
-class Market_Enum(Enum):
-    binance = "binance"
-    bybit = "bybit"
-    bitmex = "bitmex"
-    all_exchange = "all_exchange"
-
-
-# Example 1: query parameters only
-@api.route("/test/<string:stockMarket><string:startTime><string:endTime>")
-class Index(Resource):
-    async def get(self,stockMarket,startTime,endTime):
-        if stockMarket not in ["binance","bybit","bitmex","all_exchange"]:
-            abort(404,"stockMarket can only have 4 types. binance,bybit,bitmex,all_exchange")
-        return {"stockMarket":stockMarket,"startTime":startTime,"endTime":endTime}
 
 
 
