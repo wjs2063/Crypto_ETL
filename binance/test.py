@@ -14,9 +14,7 @@ logging.basicConfig(filename='./logs/info.log', encoding = 'utf-8', level = logg
 class Binance:
 
     def __init__(self, symbol: str = "BTCUSDT", limit: int = 1000):
-        self.symbol = SYMBOL
-        self.limit = limit
-        self.binance_url = BINANCE_URL
+        pass
 
     def get_current_time(self):
         return datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
@@ -94,8 +92,8 @@ class Binance:
         data = pd.DataFrame(data)
         data = self.transform_time_format(data)
         data = data[data["time"] >= start_date]
-        df = pd.concat([df, data], ignore_index=True)
-        df = df.reset_index(drop=True)
+        df = pd.concat([df, data], ignore_index = True)
+        df = df.reset_index(drop = True)
         logging.info("concatenation function is finished!!")
         return df
 

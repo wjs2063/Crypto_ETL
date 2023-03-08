@@ -155,7 +155,7 @@ class BITMEX:
                     df,db_data = self.preprocessing(df,bitmex_data,start_date,now)
                     # Async -> Load to Database
                     print(db_data)
-                    asyncio.run(self.insert_to_database(db_data))
+                    asyncio.get_event_loop().run_until_complete(self.insert_to_database(db_data))
                     logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
                     # 바뀐시간 기록
                     start_date = now

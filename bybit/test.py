@@ -135,7 +135,7 @@ class BYBIT:
                     df,db_data = self.preprocessing(df,start_date,now)
                     #DB 적재
                     print(db_data)
-                    asyncio.run(self.insert_to_database(db_data))
+                    asyncio.get_event_loop().run_until_complete(self.insert_to_database(db_data))
                     logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
                     start_date = now
                 time.sleep(20)
