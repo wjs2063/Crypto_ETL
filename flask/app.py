@@ -29,11 +29,14 @@ class Index(Resource):
 
 
 
-@api.route("/taker_volume/<string:stockmarket>/<string:starttime>/<string:endtime>")
+@api.route("/taker_volume/<string:stockmarket>/<string:starttime>/<string:endtime>",defaults = {"limit":10})
+@api.route("/taker_volume/<string:stockmarket>/<string:starttime>/<string:endtime>/<int:limit>")
 class Index(Resource):
-    def get(self, stockmarket,starttime,endtime):
+    def get(self, stockmarket,starttime,endtime,limit):
         if stockmarket not in ["binance", "bybit", "bitmex","all_exchange"]:
             abort(404, "stockMarket can only have 4 types. binance,bybit,bitmex,all_exchange")
+        if limit > 1000:
+            abort(404, "maximum of limit is 1000")
         try:
             start_dt = datetime.strptime(starttime, "%Y-%m-%d %H:%M")
             end_dt = datetime.strptime(endtime, "%Y-%m-%d %H:%M")
@@ -41,7 +44,7 @@ class Index(Resource):
             abort(400, "Invalid format. 데이터형식은 'YYYY-MM-DD HH:MM' 으로 작성하세요.")
         except Exception as e :
             abort(500,"Inter Server Error Retry!")
-        data = get_exchange_data(stockmarket,starttime,endtime)
+        data = get_exchange_data(stockmarket,starttime,endtime,limit)
         #with sync_db() as db:
             #data = list(db.binance.find({"time":{'$gte':startTime,'$lte':endTime}},{"time":1,"binance_taker_sell_vol":1,"binance_taker_buy_vol":1,"_id":0}))
         #async with get_db() as db:
