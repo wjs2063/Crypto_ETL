@@ -120,12 +120,11 @@ def preprocessing(df,now):
     # now 기준으로 data 분리
     after,before = seperate_data(df,now)
     return after,before
-# 현재 시점(분단위까지) 기록한후
-# 다음 분단위가 달라지는순간 start <= x < end_time 까지 데이터들을 종합한다.
-# 현재 시점 보다 더 작은
 
 
-# 시간 동일하게 맞춘후
+
+
+
 start_date = datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
 logging.info(f" binance system is started at {start_date}")
@@ -140,6 +139,7 @@ while True:
         if start_date != now:
             df,db_data = preprocessing(df,now)
             #asyncio.run(insert_to_database(db_data))
+            print(db_data)
             asyncio.get_event_loop().run_until_complete(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now

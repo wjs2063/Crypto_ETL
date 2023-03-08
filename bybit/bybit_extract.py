@@ -124,6 +124,7 @@ while True:
             logging.info(f"{start_date}  -  {now} : preprocessing started")
             df,db_data = preprocessing(df,now)
             #DB 적재
+            print(db_data)
             asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             start_date = now

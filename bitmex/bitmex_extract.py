@@ -7,7 +7,7 @@ import asyncio
 import logging
 logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.DEBUG)
 from typing import List,Optional
-
+from constant import *
 """
 time stamp : utc iso format
 side : Buy,Sell
@@ -37,10 +37,10 @@ def get_bitmex_data(startTime:datetime,endTime:datetime) -> List[Optional[dict]]
     :return: List[Optional[dict]]
     """
     logging.info("get_bitmex_data function is started!!")
-    bitmex_url = 'https://www.bitmex.com/api/v1/trade'
+    bitmex_url = BITMEX_URL
     param = {
-        'symbol': 'XBTUSD',
-        'count': 1000,
+        'symbol': SYMBOL,
+        'count': COUNT,
         "startTime":startTime,
         "endTime:":endTime
     }
@@ -70,9 +70,9 @@ def aggregate(data:pd.DataFrame) -> List[dict]:
     # avoid slice warning error
     data = data.copy()
     logging.info("aggregate function is started!!")
-    data["bitmex_taker_buy_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Buy" else 0,axis = 1)
-    data["bitmex_taker_sell_vol"] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Sell" else 0,axis = 1)
-    data = data.groupby("time").agg({"bitmex_taker_buy_vol":sum,"bitmex_taker_sell_vol":sum}).reset_index()
+    data[BITMEX_TAKER_BUY_VOL] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Buy" else 0,axis = 1)
+    data[BITMEX_TAKER_SELL_VOL] = data.apply(lambda x: x["price"] * x["size"] if x["side"] == "Sell" else 0,axis = 1)
+    data = data.groupby("time").agg({BITMEX_TAKER_BUY_VOL:sum,BITMEX_TAKER_SELL_VOL:sum}).reset_index()
     logging.info("aggrgate function is finished!!")
     return data.to_dict(orient = "records")
 
@@ -150,6 +150,7 @@ while True:
             bitmex_data = get_bitmex_data(start_date,now)
             df,db_data = preprocessing(df,bitmex_data,now)
             # Async -> Load to Database
+            print(db_data)
             asyncio.run(insert_to_database(db_data))
             logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
             # 바뀐시간 기록
