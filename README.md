@@ -4,7 +4,7 @@
 ## Getting start 
 
 
-## * Directory/File explanation
+* Directory/File explanation
 예시 (Binance) 이하동일(bybit,bitmex)
 
     - logs : 로그파일 기록하는 폴더  
@@ -12,6 +12,7 @@
     - database.py : database 관련 파일 
     - requriements.txt : 설치 및 필요한  library 정보
     - binance_extract.py : binance_API 로부터 ETL 작업 수행하는 코드 
+
 <br></br>
 
 
