@@ -18,10 +18,13 @@ docker pull jahy5352/crypto-server
 docker run  --name [원하는이름] -d -p [로컬포트]:[컨테이너포트] -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
 
 
+
 예시
 
 docker run  --name binance -d -p 5555:5555 -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
 
+docker pull mongo:latest
+docker run  --name mongodb -d -p 9999:27017 -it -v /Users/pn_jh/Desktop/crypto:/desktop mongo
 ````
 
 * Directory/File explanation
