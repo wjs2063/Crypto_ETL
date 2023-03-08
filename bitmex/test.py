@@ -51,7 +51,7 @@ class BITMEX:
             "startTime":startTime,
             "endTime:":endTime
         }
-        response = requests.get(bitmex_url ,params = param).json()
+        response = requests.get(BITMEX_URL ,params = param).json()
         logging.info("get_bitmex_data function is finished!!")
         return response
 

@@ -68,12 +68,11 @@ class BYBIT:
 
 
     def get_bybit_data(self) -> List[Optional[dict]]:
-        bybit_url = "https://api-testnet.bybit.com/v2/public/trading-records"
         param = {
             "symbol" : SYMBOL,
             "limit" : LIMIT
         }
-        response = requests.get(bybit_url ,params = param).json()
+        response = requests.get(BYBIT_URL ,params = param).json()
         if not response.get("result"):return []
         response = response["result"]
         # 시간순 정렬

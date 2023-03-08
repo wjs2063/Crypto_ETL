@@ -34,7 +34,7 @@ class Binance:
                 "symbol": SYMBOL,
                 "limit": LIMIT
             }
-            response = requests.get(self.binance_url, params = binance_param).json()
+            response = requests.get(BINANCE_URL, params = binance_param).json()
 
             return response
         except Exception as e:
@@ -101,7 +101,7 @@ class Binance:
         async with get_db() as db:
             for doc in data:
                 doc.update({"created_at": datetime.now()})
-                db.binance.insert_one
+                db.binance.insert_one(doc)
         logging.info("Loading into database completed successfully!!")
 
     def preprocessing(self,df,start_date,now):

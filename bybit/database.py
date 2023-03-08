@@ -4,7 +4,7 @@ import contextlib
 import logging
 
 
-logging.basicConfig(filename = 'logs/database.log', encoding = 'utf-8', level = logging.INFO)
+logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.INFO)
 MONGO_DETAILS = "mongodb://172.30.1.56:45000/test"
 
 
