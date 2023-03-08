@@ -2,7 +2,13 @@
 # Exchange ETL Pipline Project  
 
 ## Getting start 
+````
+docker pull jahy5352/crypto-server
 
+docker run  --name [원하는이름] -d -p [로컬포트]:[컨테이너포트] -it -v /Users/pn_jh/Desktop/crypto:/desktop jahy5352/crypto-server
+
+
+````
 
 * Directory/File explanation
 예시 (Binance) 이하동일(bybit,bitmex)
