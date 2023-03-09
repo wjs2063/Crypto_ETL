@@ -41,7 +41,7 @@ python -m pip install -r requirements.txt
     - constant.py : 사용자 정의상수 기록 파일
     - database.py : database 관련 파일 
     - requriements.txt : 설치 및 필요한  library 정보
-    - binance_extract.py : binance_API 로부터 ETL 작업 수행하는 코드 
+    - binance.py : binance_API 로부터 ETL 작업 수행하는 코드 
 
 <br></br>
 
@@ -59,11 +59,11 @@ python -m pip install -r requirements.txt
 각각의 거래소 컨테이너 내부에서 아래 코드를 실행한다
 
 ```
-python [exchange]_extract.py 
+python [exchange_name].py 
 
 예시
 
-python binance_extract.py
+python binance.py
 ```
 
 
