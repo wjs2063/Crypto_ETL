@@ -147,22 +147,25 @@ class BITMEX:
                     bitmex_data = self.get_bitmex_data(start_date,now)
                     df,db_data = self.preprocessing(df,bitmex_data,start_date,now)
                     # Async -> Load to Database
+                    print(db_data)
                     asyncio.get_event_loop().run_until_complete(self.insert_to_database(db_data))
                     logging.info(f"{start_date}  -  {now} : Loading into database completed successfully!!")
                     # 바뀐시간 기록
                     start_date = now
-                time.sleep(20)
+                time.sleep(10)
             except KeyError as k:
                 logging.error(f"Key Error:{k}")
+                print(k)
                 time.sleep(60 * 10)
             except Exception as e:
                 logging.error(f"Exception Error: {e}")
+                print(e)
                 time.sleep(60)
     async def insert_to_database(self,data : List[Optional[dict]]) -> None:
         async with get_db() as db:
             for doc in data:
                 doc.update({"created_at" : datetime.now()})
-                db.bybit.insert_one(doc)
+                db.bitmex.insert_one(doc)
 
 
 Bitmex = BITMEX()
