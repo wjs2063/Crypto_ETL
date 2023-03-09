@@ -120,20 +120,15 @@ class Binance:
                 # 분 단위가 달라지는 순간
                 if start_date != now:
                     df,db_data = self.preprocessing(df,start_date,now)
-                    #asyncio.run(insert_to_database(db_data))
-                    print(db_data)
-
                     asyncio.get_event_loop().run_until_complete(self.insert_to_database(db_data))
                     start_date = now
                 # 자주호출하면 IP Ban 먹을수도있으므로 10초마다 호출
                 time.sleep(10)
             except KeyError as k:
                 logging.error(f"Key Error:{k}")
-                print(k)
                 time.sleep(60 * 10)
             except Exception as e:
                 logging.error(f"Exception Error: {e}")
-                print(e)
                 time.sleep(60)
     async def insert_to_database(self, data: List[Optional[dict]]) -> None:
         async with get_db() as db:
