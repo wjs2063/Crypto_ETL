@@ -68,6 +68,9 @@ STEP 5
 pythom -m pip install requirements.txt
 ````
 
+OR 
+
+
 ### Pulling Docker image
 
 
