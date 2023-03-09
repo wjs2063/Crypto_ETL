@@ -133,6 +133,7 @@ log level = INFO level ( DEBUG < INFO < ERROR )  현재 단계에서 INFO 이상
 <img width="400" alt="crypto_ETL Flow chart" src="https://user-images.githubusercontent.com/76778082/223666950-8a4d7aa4-966f-411b-b351-d1d054abe0bf.png">
 
 
+[프로젝트설명](https://github.com/wjs2063/Crypto_ETL/tree/main/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%84%A4%EB%AA%85)
 
 ### 7. Data schema
 
