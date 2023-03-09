@@ -5,7 +5,7 @@ import time
 from database import get_db
 import asyncio
 import logging
-from typing import List,Optional
+from typing import List,Optional,Tuple
 from constant import *
 logging.basicConfig(filename = 'logs/info.log', encoding = 'utf-8', level = logging.INFO)
 
@@ -15,10 +15,10 @@ class BYBIT:
     def __init__(self):
         pass
 
-    def get_current_time(self):
+    def get_current_time(self) -> datetime :
         return datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 
-    def convert_unix_to_date(self,time):
+    def convert_unix_to_date(self,time) -> datetime :
     # 년 월 일 시 분 까지만 가져온다 (분단위)
         time /= 1000
         return datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M')
@@ -27,7 +27,7 @@ class BYBIT:
         timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
         return timestamp
 
-    def concatenate(self,df:pd.DataFrame,start_date,data:pd.DataFrame):
+    def concatenate(self,df:pd.DataFrame,start_date,data:pd.DataFrame) -> pd.DataFrame:
         """
         concatenation function : 두개의 data 를 이어붙힌다.
         :param df: pd.DataFrame
@@ -43,7 +43,7 @@ class BYBIT:
         logging.info("concatenation function is finished!!")
         return df
 
-    def seperate_data(self,df:pd.DataFrame,start_date,now) -> List[tuple]:
+    def seperate_data(self,df:pd.DataFrame,start_date,now) -> Tuple[pd.DataFrame,pd.DataFrame]:
         """
         seperate_data function -> 현재까지받아온 데이터중에서 now 기준 x분.00초 <= t < (x + 1)분.00초 데이터로 분리해낸다.
         :param df: pd.DataFrame
@@ -99,7 +99,7 @@ class BYBIT:
         data = data.groupby("time").agg({BYBIT_TAKER_BUY_VOL:sum,BYBIT_TAKER_SELL_VOL:sum}).reset_index()
         return data.to_dict(orient = "records")
 
-    def preprocessing(self,df,start_date,now):
+    def preprocessing(self,df,start_date,now) -> Tuple[pd.DataFrame,pd.DataFrame]:
         logging.info(f"{start_date}  -  {now} : preprocessing started")
         #중복제거
         df = df.drop_duplicates()
@@ -109,7 +109,7 @@ class BYBIT:
         after,before = self.seperate_data(df,start_date,now)
         return after,before
 
-    def excute(self):
+    def excute(self) -> None:
         start_date = self.get_current_time()
         df = pd.DataFrame(columns = ["id","symbol","price","qty","side","time"])
         while True:
@@ -134,7 +134,7 @@ class BYBIT:
             except Exception as e:
                 logging.error(f"Exception Error: {e}")
                 time.sleep(60)
-    async def insert_to_database(self,data : List[Optional[dict]]):
+    async def insert_to_database(self,data : List[Optional[dict]]) -> None:
         async with get_db() as db:
             for doc in data:
                 doc.update({"created_at" : datetime.now()})

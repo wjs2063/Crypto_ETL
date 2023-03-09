@@ -4,7 +4,7 @@ import pandas as pd
 from database import get_db
 import time
 import asyncio
-from typing import List,Optional
+from typing import List,Optional,Tuple
 from constant import *
 import logging
 
@@ -16,15 +16,15 @@ class Binance:
     def __init__(self):
         pass
 
-    def get_current_time(self):
+    def get_current_time(self) -> datetime :
         return datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d %H:%M')
 
-    def convert_unix_to_date(self, time):
+    def convert_unix_to_date(self, time) -> datetime:
         # 년 월 일 시 분 까지만 가져온다 (분단위)
         time /= 1000
         return datetime.fromtimestamp(time).strftime('%Y-%m-%d %H:%M')
 
-    def convert_iso_form(self, time):
+    def convert_iso_form(self, time)  :
         timestamp = int(datetime.fromisoformat(time[:-1]).timestamp() * 1000 + int(time[-4:-1]))
         return timestamp
 
@@ -46,7 +46,7 @@ class Binance:
         df["time"] = df["time"].apply(lambda x: self.convert_unix_to_date(x))
         return df
 
-    def seperate_data(self, df: pd.DataFrame,start_date,now) -> List[tuple]:
+    def seperate_data(self, df: pd.DataFrame,start_date,now) -> Tuple[pd.DataFrame,pd.DataFrame] :
         """
         separate_data function -> 현재까지받아온 데이터중에서 x분.00초 <= t < (x + 1)분.00초 데이터로 분리해낸다.
         :param df: pd.DataFrame
@@ -81,7 +81,7 @@ class Binance:
         return data.to_dict(orient = "records")
 
 
-    def concatenate(self, df: pd.DataFrame,start_date:datetime , data: pd.DataFrame,):
+    def concatenate(self, df: pd.DataFrame,start_date:datetime , data: pd.DataFrame,) -> pd.DataFrame:
         """
         concatenation function : 두개의 data 를 이어붙힌다.
         :param df: pd.DataFrame
@@ -97,7 +97,7 @@ class Binance:
         logging.info("concatenation function is finished!!")
         return df
 
-    def preprocessing(self,df,start_date,now):
+    def preprocessing(self,df,start_date,now) -> Tuple[pd.DataFrame,pd.DataFrame]:
         #중복제거
         df = df.drop_duplicates()
         # 시간기준 오름차순 정렬
@@ -107,7 +107,7 @@ class Binance:
         return after,before
 
 
-    def excute(self):
+    def excute(self) -> None:
         start_date = self.get_current_time()
         df = pd.DataFrame(columns = ['id', 'price', 'qty', 'quoteQty', 'time', 'isBuyerMaker'])
         while True:
@@ -135,7 +135,7 @@ class Binance:
                 logging.error(f"Exception Error: {e}")
                 print(e)
                 time.sleep(60)
-    async def insert_to_database(self, data: List[Optional[dict]]):
+    async def insert_to_database(self, data: List[Optional[dict]]) -> None:
         async with get_db() as db:
             for doc in data:
                 doc.update({"created_at": datetime.now()})
